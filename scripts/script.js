@@ -41,7 +41,7 @@ $('.ES').on('click', function() {
 });
 
 $('.RU').on('click', function() {
-  display('CAT', $(this));
+  display('RUS', $(this));
 });
 
 
