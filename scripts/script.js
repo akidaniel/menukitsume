@@ -40,7 +40,7 @@ $('.ES').on('click', function() {
   display('LES', $(this));
 });
 
-$('.CT').on('click', function() {
+$('.RU').on('click', function() {
   display('CAT', $(this));
 });
 
@@ -99,7 +99,7 @@ $('.dish-2, .dish-3').mouseleave(function() {
 $(document).ready(function() {
 
 var display = function(alerglang) {
-  $('.LESa, .LUKa, .LFRa, .CATa').css('display', 'none');
+  $('.LESa, .LUKa, .LFRa, .RUSa').css('display', 'none');
   $('.' + alerglang).css('display', 'flex');
 
 
@@ -113,8 +113,8 @@ $('.ES').on('click', function() {
   display('LESa', $(this));
 });
 
-$('.CT').on('click', function() {
-  display('CATa', $(this));
+$('.RU').on('click', function() {
+  display('RUSa', $(this));
 });
 
 

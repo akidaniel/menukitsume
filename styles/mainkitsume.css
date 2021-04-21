@@ -341,7 +341,7 @@ position:relative;
 	
 #cambiocontenido {transition: bottom 0.3s;}	
 #LES {display:block;}
-.LUK, .LFR, .CAT {display:none;}
+.LUK, .LFR, .RUS {display:none;}
 .LES {display:block;}
 
 .menu_lang, .menu_contenido {display: none;}
@@ -434,9 +434,9 @@ a.FINDUS {text-decoration: none;}
 .expandish .alergenos {display:none; position: relative; visibility: visible; margin-bottom: -1rem;}
 
 .expandish .LESa {display:flex;}	
-.expandish .LUKa, .expandish .LFRa, .expandish .CATa {display:none;}
+.expandish .LUKa, .expandish .LFRa, .expandish .RUSa {display:none;}
 
-.LESa label, .CATa label, .LUKa label, .LFRa label {font-family: 'Gothic A1', sans-serif;
+.LESa label, .RUSa label, .LUKa label, .LFRa label {font-family: 'Gothic A1', sans-serif;
 top: -10px; position: absolute;
 line-height: 0%; font-size:12px; text-align:center; color:#803a30; font-weight:bold; min-width: 4rem;}
 
