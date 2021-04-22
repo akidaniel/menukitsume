@@ -172,32 +172,32 @@ z-index: 9500;
 margin:2rem 0 1rem 0;
 width:100%;}
 
-.menuitemcontainer, .cartadevinos, .cartadepostres {max-width: 580px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius:10px; margin: 0 auto; /*-moz-box-shadow: #223139 0 0 5px; -webkit-box-shadow: #223139 0 0 5px; box-shadow: #223139 0 0 5px;*/}
-.menuitem {font-family: 'Euphoria Script', cursive; font-size: 2.8rem; 
-color: #e0ffff;
+.menuitemcontainer, .cartadevinos, .cartadesushis {max-width: 580px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius:10px; margin: 0 auto; /*-moz-box-shadow: #223139 0 0 5px; -webkit-box-shadow: #223139 0 0 5px; box-shadow: #223139 0 0 5px;*/}
+.menuitem {font-family: 'Merienda', cursive; font-size: 2rem; 
+color: #D61C1C;
 text-align: center;
 margin: 0 -0.05rem -0.1rem;
-background: rgb(4,80,90,0.5);
+background: rgb(248,244,235,1);
 padding: 5px;
 -moz-border-radius: 12px 12px 0 0;
 -webkit-border-radius: 12px 12px 0 0;
 border-radius: 12px 12px 0 0;
-text-shadow: 2px 1px 0.1rem #034163;
+text-shadow: 1px 1px 1px #D61C1C;
 }
 
 i {color: #e0ffff;}
 .ultimalinea {border:none}
-.menudevinos, .menudepostres {display:none}
+.menudevinos, .menusushi {display:none}
 .bebidas, .desserts  {margin-top:-4.5rem!important;}
 
 
 .topimage {margin: -2.5rem auto 0; text-align:center;}
 .topimage img {max-width:500px;}
 .principal {
-flex: 1;
+flex: 1 50%;
 font-family: 'M PLUS 1p', sans-serif;
 font-size:18px;
-padding: 5px 5px 2px 5px; 
+padding: 5px 0px; 
 border-bottom: 1px dotted #1E5B77;
 color:#1E5B77;
 font-weight: 500;
@@ -231,7 +231,7 @@ margin: 0px;
     -webkit-border-radius: 12px;
     border-radius: 12px; -moz-box-shadow: 0 0 0pt 1.5pt #478088; -webkit-box-shadow: 0 0 0pt 1.5pt #478088; box-shadow: 0 0 0pt 1.5pt #478088;
 	background: rgba(213,247,255,0.3);}
-.dish-2 img, .dish-3 img {max-height: 100%; max-width: 100%; -webkit-filter: drop-shadow(2px 6px 5px rgba(1,40,45,0.5));}
+.dish-2 img, .dish-3 img {max-height: 100%; max-width: 100%; /*-webkit-filter: drop-shadow(2px 6px 5px rgba(1,40,45,0.5));*/}
 .dish-1 {width:99%;}
 .dish-1 img {height: 50%; width: 50%; -webkit-filter: drop-shadow(2px 6px 5px rgba(1,40,45,0.5));}
 
@@ -364,7 +364,7 @@ z-index:222;}
 .CT {background-image: url(https://akidaniel.github.io/menukitsume/imagenes/catalan.png);}
 .RU {background-image: url(https://akidaniel.github.io/menukitsume/imagenes/ruso.png);}
 
-.platos, .vinos, .postres {display: block;
+.platos, .vinos, .sushis {display: block;
 	width: 5rem;
 	height: 5.5rem;
 	text-indent: -9999px;
@@ -374,7 +374,7 @@ z-index:222;}
 }
 .platos {background: url(https://akidaniel.github.io/menukitsume/imagenes/bt_comida.png) no-repeat center 43%; background-size: contain;}
 .vinos {background: url(https://akidaniel.github.io/menukitsume/imagenes/bt_bebida.png) no-repeat center 43%; background-size: contain;}
-.postres {background: url(https://akidaniel.github.io/menukitsume/imagenes/dess_icon.png) no-repeat center 43%; background-size: contain;}
+.sushis {background: url(https://akidaniel.github.io/menukitsume/imagenes/bt_bebida.png) no-repeat center 43%; background-size: contain;}
 
 .dish-2 div {text-align: right;}
 
@@ -394,8 +394,9 @@ z-index: 12;
 padding-bottom: 1rem;
 border-radius:12px!important;
 }
-
-.expandish img {width: 300px; /**padding: 15px 0 0 0;**/}
+.listainside {padding:5px 0px;}
+.expandish img {width: 350px;
+    margin-top: -20px; margin-bottom: 15px;}
 
 	
 .expandish .pricex3 {left:20%; position: relative;}
@@ -410,7 +411,7 @@ border-radius:12px!important;
 
 .-L {padding-bottom:0.8rem;}
 .-C {text-align:center!important; }
-.cartadevinos.TITLE, .cartadepostres.TITLE {margin: 6rem auto 0;}
+.cartadevinos.TITLE, .cartadesushis.TITLE {margin: 5rem auto 0;}
 .wine {text-align: center!important;}
 .wine img {height: 230px; padding:0; margin: 0 auto 0.8rem; -webkit-filter: drop-shadow(3px 4px 3px rgba(1,40,45,0.4));}
 .expandish .wine img {width:unset; height: unset; }
@@ -560,7 +561,7 @@ left:0;}
 html {margin: -0.5rem 2px 0;
 }
 .menuitemcontainer { /*-moz-box-shadow: #223139 0 0 4px; -webkit-box-shadow: #223139 0 0 4px; box-shadow: #223139 0 0 4px; */}
-.UK, .ES, .FR, .CT {margin: 0 1rem; width: 3rem;}
+.UK, .ES, .FR, .CT, .RU {margin: 0 1rem; width: 3rem;}
 .BOTONERA {top: 4.15rem;}
 .dish-2.expandish, .dish-3.expandish, .dish-1.expandish {max-width: 92%;}
 

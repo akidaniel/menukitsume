@@ -53,7 +53,7 @@ $('.FR').on('click', function() {
 $(document).ready(function() {
 
 var display = function(block_name) {
-  $('.menuitemcontainer, .menudevinos, .menudepostres').css('display', 'none');
+  $('.menuitemcontainer, .menudevinos, .menudesushis').css('display', 'none');
   $('#' + block_name).css('display', 'block');
   $('.' + block_name).css('display', 'block');
 }
@@ -66,8 +66,8 @@ $('.vinos').on('click', function() {
   display('menudevinos', $(this));
 });
 
-$('.postres').on('click', function() {
-  display('menudepostres', $(this));
+$('.sushis').on('click', function() {
+  display('menudesushis', $(this));
 });
 
 });
