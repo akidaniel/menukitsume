@@ -173,7 +173,7 @@ z-index: 9500;
 margin:2rem 0 1rem 0;
 width:100%;}
 
-.menuitemcontainer, .cartadevinos, .cartadesushis {max-width: 580px;/* -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius:10px; margin: 0 auto; -moz-box-shadow: #223139 0 0 5px; -webkit-box-shadow: #223139 0 0 5px; box-shadow: #223139 0 0 5px;*/}
+.menuitemcontainer, .cartadevinos, .cartadesushis {max-width: 580px; margin: 0 auto;/* -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius:10px;  -moz-box-shadow: #223139 0 0 5px; -webkit-box-shadow: #223139 0 0 5px; box-shadow: #223139 0 0 5px;*/}
 .menuitem {font-family: 'Merienda', cursive; font-size: 1.8rem; 
 color: #D61C1C;
 text-align: center;
@@ -189,7 +189,7 @@ text-shadow: 1px 1px 1px #D61C1C;
 
 i {color: #e0ffff;}
 .ultimalinea {border:none}
-.menudevinos, .menudesushis {display:none}
+.menudevinos, .menudesushis {display:none;}
 .bebidas, .desserts  {margin-top:-4.5rem!important;}
 
 
