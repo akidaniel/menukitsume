@@ -42,7 +42,7 @@ background: linear-gradient(to bottom, rgba(145,133,94,0.8) 0%, rgba(248,234,235
 
 }
  
-.wrapper {overflow-x:hidden; position: relative; padding: 0 3px;}
+.wrapper {overflow-x:hidden; position: relative;}
 
 .CENTER {
   -ms-flex-pack: center;
@@ -149,7 +149,6 @@ filter:hue-rotate(0deg) saturate(1) brightness(2.5);
 
 .flexbox {
 display: flex;
-
 margin: 0 auto;
 }
 
@@ -174,7 +173,7 @@ z-index: 9500;
 margin:2rem 0 1rem 0;
 width:100%;}
 
-.menuitemcontainer, .cartadevinos, .cartadesushis {max-width: 580px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius:10px; margin: 0 auto; /*-moz-box-shadow: #223139 0 0 5px; -webkit-box-shadow: #223139 0 0 5px; box-shadow: #223139 0 0 5px;*/}
+.menuitemcontainer, .cartadevinos, .cartadesushis {max-width: 580px;/* -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius:10px; margin: 0 auto; -moz-box-shadow: #223139 0 0 5px; -webkit-box-shadow: #223139 0 0 5px; box-shadow: #223139 0 0 5px;*/}
 .menuitem {font-family: 'Merienda', cursive; font-size: 1.8rem; 
 color: #D61C1C;
 text-align: center;
@@ -221,28 +220,29 @@ margin: 0px;
 .ultimalinea {border:none}
 
 .licor {flex: 0 0 28%;}
-.dish-2 {text-align: center; width:49%; z-index:10; margin: 0.1rem 0.05rem 0.05rem; 
-   padding: 0.2rem 0.2rem 1rem; -moz-border-radius: 12px;
+.dish-2 {text-align: center; width:49%; z-index:10; margin: 0.1rem 0.5rem 0.05rem; 
+   padding: 0.2rem 0.2rem 1rem;
+	/* -moz-border-radius: 12px;
     -webkit-border-radius: 12px;
-    border-radius: 12px; 
-	/*-moz-box-shadow: 0 0 0pt 1.5pt #478088; 
+    border-radius: 12px;
+	 -moz-box-shadow: 0 0 0pt 1.5pt #478088; 
 	-webkit-box-shadow: 0 0 0pt 1.5pt #478088; 
 	box-shadow: 0 0 0pt 1.5pt #478088;
 	background: rgba(213,247,255,0.3);*/}
 .dish-3 {text-align: center; width:32%; z-index:10; margin: 0.15rem 0.06rem 0rem; width:49%; z-index:10;
-    padding: 0.2rem 0.2rem 1rem; -moz-border-radius: 12px;
+    padding: 0.2rem 0.2rem 1rem; /*-moz-border-radius: 12px;
     -webkit-border-radius: 12px;
     border-radius: 12px; -moz-box-shadow: 0 0 0pt 1.5pt #478088; -webkit-box-shadow: 0 0 0pt 1.5pt #478088; box-shadow: 0 0 0pt 1.5pt #478088;
-	background: rgba(213,247,255,0.3);}
+	background: rgba(213,247,255,0.3);*/}
 .dish-2 img, .dish-3 img {max-height: 100%; max-width: 100%; border: 4px solid #534540;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;}
 .dish-1 {width:99%;}
 .dish-1 img {height: 50%; width: 50%; border: 4px solid #534540;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;}
 
-.topdish {border-radius: 0 0 12px 12px; -moz-border-radius: 0 0 12px 12px;
+.topdish {/*border-radius: 0 0 12px 12px; -moz-border-radius: 0 0 12px 12px;
     -webkit-border-radius: 0 0 12px 12px;
-    border-radius: 0 0 12px 12px; margin-top: -7px;}
+    border-radius: 0 0 12px 12px; margin-top: -7px;*/}
 	
 .topdishsinlista {margin-top: 0px;} 	
 .destacado {font-family: 'Commissioner', sans-serif; margin:0.5rem 0.5rem 1rem;
@@ -260,23 +260,34 @@ font-size:14px; text-align:center; margin: 0px; line-height: 125%;
 .price {position: relative;
 font-family: 'Commissioner', sans-serif;
 transform: scale(.8, 1);
-    display: inline-block;
-    right: 0;
-    font-weight: bold;
-	color: #534540; margin-right:-10px;/*width:fit-content;-moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    border-radius: 20px;
-    padding: 4px 10px;
-    background-color: #7B7E97;
-    bottom: 15px; color: white;
-    left: 60%;
- display: block;
+display: inline-block;
+right: 0;
+font-weight: bold;
+color: #534540; margin-right:-10px; line-height: 100%;
+/*width:fit-content;-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+border-radius: 20px;
+padding: 4px 10px;
+background-color: #7B7E97;
+bottom: 15px; color: white;
+left: 60%;
+display: block;
 width: 50px; text-align: unset;*/
 }
    
+.platoprecio {display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 0px 0px 0 6px;
+	align-items: flex-end;}
+.platoprecio .plato {text-align:left; display: flex; flex:1; }	
+.platoprecio .price {display: flex;}
+.platoprecio div:nth-child(3n) {padding: 10px 10px 0 10px; flex:1 1 160px!important;}
+.expandish .platoprecio .plato  {flex-basis: 70%;}
+.expandish .platoprecio .price  {margin:0;}
 
-	
-	
 .dishphoto {text-align:center!important}
 
 .pricex3 {left: 30%; margin: 0 auto; position:unset;}
@@ -317,16 +328,16 @@ width: 50px; text-align: unset;*/
 		  content: "\2617"; color:blue; margin-left: -1.5em; z-index:-9999; display:none;
 }
 
-.menues {/*background: rgb(219,249,255,0.35);
+/*.menues {background: rgb(219,249,255,0.35);
     padding: 5px;
     -moz-border-radius: 12px;
     -webkit-border-radius: 12px;
-    border-radius: 15px;*/}
+    border-radius: 15px;}
 	
 .menueslight {}
 
 	
-.menues .menuitem {margin-bottom: 0.5rem;}
+.menues .menuitem {margin-bottom: 0.5rem;}*/
 	
 /*LANGUE*/
 .BOTONERA, .cambiocontenido {display: -webkit-box;
@@ -413,9 +424,9 @@ border-radius: 0;
 	
 .expandish .pricex3 {left:20%; position: relative;}
 
-.expandish .dishphoto {margin: 15px 0 -10px; text-align: center;}
+.expandish .dishphoto {margin: 20px 0 10px; text-align: center;}
 
-.expandish .menuitem {color:#91855E;}
+.expandish .menuitem, .expandish .price  {color:#91855E;}
 
 .TITLE {-moz-box-shadow: none;
     -webkit-box-shadow: none;
