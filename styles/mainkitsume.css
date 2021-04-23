@@ -25,21 +25,23 @@ text-align:left;
 
 .pagina {box-sizing:border-box;
 padding:0;
-background:url(https://akidaniel.github.io/menukitsume/imagenes/fondo.gif);
-background-size:75%;
+background: -moz-linear-gradient(top, rgba(80, 70, 65,0.8) 0%, rgba(248,234,235,0.1) 6%), url('https://akidaniel.github.io/menukitsume/imagenes/fondobase.png') left bottom no-repeat, url('https://akidaniel.github.io/menukitsume/imagenes/fondo.gif') left bottom repeat;
 
-/*background: -moz-linear-gradient(top, rgba(145,133,94,0.8) 0%, rgba(248,234,235,0.5) 6%), url('https://akidaniel.github.io/menukitsume/imagenes/fondovictoriagri.jpg');
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(80, 70, 65,0.8)), color-stop(8%, rgba(248,234,235,0.1))), url('https://akidaniel.github.io/menukitsume/imagenes/fondobase.png') left bottom no-repeat, url('https://akidaniel.github.io/menukitsume/imagenes/fondo.gif') left bottom repeat;
 
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(145,133,94,0.8)), color-stop(8%, rgba(248,234,235,0.5))), url('https://akidaniel.github.io/menukitsume/imagenes/fondovictoriagri.jpg');
 
-background: -webkit-linear-gradient(top, rgba(145,133,94,0.8) 0%, rgba(248,234,235,0.5) 6%), url('https://akidaniel.github.io/menukitsume/imagenes/fondovictoriagri.jpg');
+background: -webkit-linear-gradient(top, rgba(80, 70, 65,0.8) 0%, rgba(248,234,235,0.1) 6%), url('https://akidaniel.github.io/menukitsume/imagenes/fondobase.png') left bottom no-repeat, url('https://akidaniel.github.io/menukitsume/imagenes/fondo.gif') left bottom repeat;
 
-background: -o-linear-gradient(top, rgba(145,133,94,0.8) 0%, rgba(248,234,235,0.5) 6%), url('https://akidaniel.github.io/menukitsume/imagenes/fondovictoriagri.jpg');
 
-background: -ms-linear-gradient(top, rgba(145,133,94,0.8) 0%, rgba(248,234,235,0.5) 6%), url('https://akidaniel.github.io/menukitsume/imagenes/fondovictoriagri.jpg');
+background: -o-linear-gradient(top, rgba(80, 70, 65,0.8) 0%, rgba(248,234,235,0.1) 6%), url('https://akidaniel.github.io/menukitsume/imagenes/fondobase.png') left bottom no-repeat, url('https://akidaniel.github.io/menukitsume/imagenes/fondo.gif') left bottom repeat;
 
-background: linear-gradient(to bottom, rgba(145,133,94,0.8) 0%, rgba(248,234,235,0.5) 6%), url('https://akidaniel.github.io/menukitsume/imagenes/fondovictoriagri.jpg')*/;
 
+background: -ms-linear-gradient(top, rgba(80, 70, 65,0.8) 0%, rgba(248,234,235,0.1) 6%), url('https://akidaniel.github.io/menukitsume/imagenes/fondobase.png') left bottom no-repeat, url('https://akidaniel.github.io/menukitsume/imagenes/fondo.gif') left bottom repeat;
+
+
+background: linear-gradient(to bottom, rgba(80, 70, 65,0.8) 0%, rgba(248,234,235,0.1) 6%), url('https://akidaniel.github.io/menukitsume/imagenes/fondobase.png') left bottom no-repeat, url('https://akidaniel.github.io/menukitsume/imagenes/fondo.gif') left bottom repeat;
+
+background-size: 35%, contain;
 }
  
 .wrapper {overflow-x:hidden; position: relative;}
@@ -55,12 +57,12 @@ background: linear-gradient(to bottom, rgba(145,133,94,0.8) 0%, rgba(248,234,235
 .SUBTITULO{font-family: 'Commissioner', sans-serif;
 font-size: 2rem;
 text-align:center;
-line-height: 2.5rem;
-margin: 0 0 1rem;
-color: #e0ffff;;
+/*line-height: 2.5rem;
+margin: 0 0 1rem; text-shadow: 0 0 1rem #001929;*/
+color: #000000;
 letter-spacing: 0.5rem;
 text-transform: uppercase;
-text-shadow: 0 0 1rem #001929;
+font-weight:900; line-height:100%;
 }
 
 
@@ -79,11 +81,11 @@ width:100%;}
 /*BOTON SOCIAL*/
 .FCBK, .TWITTER, .INSTA, .MAIL, .BACK, .HOME, .WHATS {
 text-indent: unset;
-border: 0.15rem solid #e0ffff;
+border: 0.15rem solid #F1E7D7;
 border-radius: 8px;
 font-family: "Font Awesome 5 Brands";
 padding-right: 0.35rem;
-color: #e0ffff;
+color: #F1E7D7;
 text-decoration:none;
 font-size: 1.5rem;
 line-height: 2.5rem;
@@ -182,7 +184,7 @@ background: rgb(248,244,235,1);
 -moz-border-radius: 12px 12px 0 0;
 -webkit-border-radius: 12px 12px 0 0;
 border-radius: 12px 12px 0 0;*/
-padding: 5px 0 20px;;
+padding: 0 0 20px;;
 
 text-shadow: 1px 1px 1px #D61C1C;
 }
@@ -220,8 +222,8 @@ margin: 0px;
 .ultimalinea {border:none}
 
 .licor {flex: 0 0 28%;}
-.dish-2 {text-align: center; width:49%; z-index:10; margin: 0.1rem 0.5rem 0.05rem; 
-   padding: 0.2rem 0.2rem 1rem;
+.dish-2 {text-align: center; width:49%; z-index:10; margin: 0rem 1rem 1rem 0rem; 
+   padding: 0 0.2rem;
 	/* -moz-border-radius: 12px;
     -webkit-border-radius: 12px;
     border-radius: 12px;
@@ -234,8 +236,11 @@ margin: 0px;
     -webkit-border-radius: 12px;
     border-radius: 12px; -moz-box-shadow: 0 0 0pt 1.5pt #478088; -webkit-box-shadow: 0 0 0pt 1.5pt #478088; box-shadow: 0 0 0pt 1.5pt #478088;
 	background: rgba(213,247,255,0.3);*/}
-.dish-2 img, .dish-3 img {max-height: 100%; max-width: 100%; border: 4px solid #534540;
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;}
+.dish-2 img, .dish-3 img {max-height: 100%; max-width: 100%; border: 10px solid rgb(173, 162, 129, 0.5);
+    border-image: url(https://akidaniel.github.io/menukitsume/imagenes/frame1.png) 30 stretch;
+	-webkit-border-image: url(https://akidaniel.github.io/menukitsume/imagenes/frame1.png) 30 stretch;
+    -moz-border-image: url(https://akidaniel.github.io/menukitsume/imagenes/frame1.png) 30 stretch;}
+
 .dish-1 {width:99%;}
 .dish-1 img {height: 50%; width: 50%; border: 4px solid #534540;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;}
@@ -245,9 +250,9 @@ margin: 0px;
     border-radius: 0 0 12px 12px; margin-top: -7px;*/}
 	
 .topdishsinlista {margin-top: 0px;} 	
-.destacado {font-family: 'Commissioner', sans-serif; margin:0.5rem 0.5rem 1rem;
+.destacado {font-family: 'Commissioner', sans-serif; margin:0.5rem 0.5rem 2rem;
 text-align:left;
-font-size:17px; font-weight: normal; text-align:center; line-height: 120%; color: #e0ffff; text-shadow: none;}
+font-size:17px; font-weight: bold; text-align:center; line-height: 120%; color: #534540; text-shadow: none;}
 .descr {font-family: 'Commissioner', sans-serif; font-weight: normal;
 font-size:14px; text-align:center; margin: 0px; line-height: 125%;
 }
@@ -263,7 +268,7 @@ transform: scale(.8, 1);
 display: inline-block;
 right: 0;
 font-weight: bold;
-color: #534540; margin-right:-10px; line-height: 100%;
+color: #534540; margin-right:-15px; line-height: 100%;
 /*width:fit-content;-moz-border-radius: 20px;
 -webkit-border-radius: 20px;
 border-radius: 20px;
@@ -279,8 +284,7 @@ width: 50px; text-align: unset;*/
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 0;
-    padding: 0px 0px 0 6px;
+    padding: 6px 0px 0 9px;
 	align-items: flex-end;}
 .platoprecio .plato {text-align:left; display: flex; flex:1; }	
 .platoprecio .price {display: flex;}
@@ -398,7 +402,7 @@ z-index:222;}
 
 .dish-2 div {text-align: right;}
 
-.menuitem img {vertical-align: middle; margin:0 10px;}
+.menuitem img {vertical-align: middle; margin:0 10px 0px -5px;}
 
 .expandish {
 background-color:#0D0406;
@@ -432,7 +436,7 @@ border-radius: 0;
 
 .-L {padding-bottom:0.8rem;}
 .-C {text-align:center!important; }
-.cartadevinos.TITLE, .cartadesushis.TITLE {margin: 5rem auto 0;}
+.cartadevinos.TITLE, .cartadesushis.TITLE {margin: 5rem auto 1rem;}
 .wine {text-align: center!important;}
 .wine img {height: 230px; padding:0; margin: 0 auto 0.8rem; -webkit-filter: drop-shadow(3px 4px 3px rgba(1,40,45,0.4));}
 .expandish .wine img {width:unset; height: unset; }
@@ -581,6 +585,8 @@ left:0;}
 @media only screen and (max-width: 900px) {
 html {margin: -0.5rem 2px 0;
 }
+.pagina {background-size:contain;
+}
 .menuitemcontainer { /*-moz-box-shadow: #223139 0 0 4px; -webkit-box-shadow: #223139 0 0 4px; box-shadow: #223139 0 0 4px; */}
 .UK, .ES, .FR, .CT, .RU {margin: 0 1rem; width: 3rem;}
 .BOTONERA {top: 4.15rem;}
@@ -634,14 +640,14 @@ top:-1.8rem;
 
 /*BOTON SOCIAL*/
 .FCBK, .TWITTER, .INSTA, .MAIL, .BACK, .HOME, .WHATS {
-border: 0.13rem solid #6fa6a2;
+border: 0.13rem solid #ADA281;
 border-radius: 3rem;
 line-height: 3rem;
 margin: 0 -0.04rem;
 width: 3.5rem;
 text-align: center;
 padding: 1.2rem 0 0;
-color: #6fa6a2;
+color: #ADA281;
 }
 .BACK {display:block;}
 }
