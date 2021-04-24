@@ -236,11 +236,14 @@ margin: 0px;
     -webkit-border-radius: 12px;
     border-radius: 12px; -moz-box-shadow: 0 0 0pt 1.5pt #478088; -webkit-box-shadow: 0 0 0pt 1.5pt #478088; box-shadow: 0 0 0pt 1.5pt #478088;
 	background: rgba(213,247,255,0.3);*/}
-.dish-2 img, .dish-3 img {max-height: 100%; max-width: 100%; border: 10px solid rgb(173, 162, 129, 0.5);
+.dish-2 img {max-height: 100%; max-width: 100%; border: 10px solid rgb(173, 162, 129, 0.5);
     border-image: url(https://akidaniel.github.io/menukitsume/imagenes/frame1.png) 30 stretch;
 	-webkit-border-image: url(https://akidaniel.github.io/menukitsume/imagenes/frame1.png) 30 stretch;
     -moz-border-image: url(https://akidaniel.github.io/menukitsume/imagenes/frame1.png) 30 stretch;}
-
+.dish-3 img {max-height: 100%; max-width: 100%; border: 10px solid rgb(173, 162, 129, 0.5);
+    border-image: url(https://akidaniel.github.io/menukitsume/imagenes/frame2.png) 30 stretch;
+	-webkit-border-image: url(https://akidaniel.github.io/menukitsume/imagenes/frame2.png) 30 stretch;
+    -moz-border-image: url(https://akidaniel.github.io/menukitsume/imagenes/frame2.png) 30 stretch;}
 .dish-1 {width:99%;}
 .dish-1 img {height: 50%; width: 50%; border: 4px solid #534540;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;}
@@ -279,6 +282,7 @@ left: 60%;
 display: block;
 width: 50px; text-align: unset;*/
 }
+.-C .menuitem.plato {margin:5px 0}
    
 .platoprecio {display: flex;
     flex-wrap: wrap;
@@ -419,6 +423,7 @@ color: #ffffff;
 border-radius: 0;
 }
 .listainside {padding:5px 0px;}
+.listaplus {width:100%}
 .expandish img {width: 100%;
     margin-top: -10px;
     border: none;
@@ -439,7 +444,7 @@ border-radius: 0;
 .-C {text-align:center!important; }
 .cartadevinos.TITLE, .cartadesushis.TITLE {margin: 5rem auto 1rem;}
 .wine {text-align: center!important;}
-.wine img {height: 230px; padding:0; margin: 0 auto 0.8rem; -webkit-filter: drop-shadow(3px 4px 3px rgba(1,40,45,0.4));}
+.wine img {height: 230px; padding:22px; margin: 0 auto 0.8rem;}
 .expandish .wine img {width:unset; height: unset; }
 .expandish .-C .price {line-height: 180%; margin-left: 10rem; left:unset; right:unset;}
 .expandish .-C .pricex3 {line-height: 180%; margin-left: 10rem; left:unset; right:unset;}
@@ -448,7 +453,6 @@ border-radius: 0;
 .expandish .wine {text-align: left!important; margin-left: 3rem!important; height: 430px;}
 .expandish .-C p {margin-left: 10rem;}
 .expandish .-C .descr {padding: 0 0 10px 0;}
-
 
 .FINDUS {top:0;}
 a.FINDUS {text-decoration: none;}
