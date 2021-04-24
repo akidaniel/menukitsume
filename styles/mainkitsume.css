@@ -185,7 +185,7 @@ background: rgb(248,244,235,1);
 -webkit-border-radius: 12px 12px 0 0;
 border-radius: 12px 12px 0 0;*/
 padding: 0 0 20px;;
-
+line-height: 100%;
 text-shadow: 1px 1px 1px #D61C1C;
 }
 
@@ -282,7 +282,7 @@ left: 60%;
 display: block;
 width: 50px; text-align: unset;*/
 }
-.-C .menuitem.plato {margin:5px 0}
+
    
 .platoprecio {display: flex;
     flex-wrap: wrap;
@@ -403,7 +403,7 @@ z-index:222;}
 }
 .platos {background: url(https://akidaniel.github.io/menukitsume/imagenes/bt_comida.png) no-repeat center 43%; background-size: contain;}
 .vinos {background: url(https://akidaniel.github.io/menukitsume/imagenes/bt_bebida.png) no-repeat center 43%; background-size: contain;}
-.sushis {background: url(https://akidaniel.github.io/menukitsume/imagenes/bt_bebida.png) no-repeat center 43%; background-size: contain;}
+.sushis {background: url(https://akidaniel.github.io/menukitsume/imagenes/bt_sushi.png) no-repeat center 43%; background-size: contain;}
 
 .dish-2 div {text-align: right;}
 
@@ -444,7 +444,7 @@ border-radius: 0;
 .-C {text-align:center!important; }
 .cartadevinos.TITLE, .cartadesushis.TITLE {margin: 5rem auto 1rem;}
 .wine {text-align: center!important;}
-.wine img {height: 230px; padding:22px; margin: 0 auto 0.8rem;}
+.wine img {height: 230px; padding: 16px 30px; margin: 0 auto 0.8rem;}
 .expandish .wine img {width:unset; height: unset; }
 .expandish .-C .price {line-height: 180%; margin-left: 10rem; left:unset; right:unset;}
 .expandish .-C .pricex3 {line-height: 180%; margin-left: 10rem; left:unset; right:unset;}
@@ -610,11 +610,11 @@ html {margin: -0.5rem 2px 0;
 
 .menuitem {margin: 0 -0.05rem -0.1rem;
 }
-	
-/**.price {left:30%}
-.expandish .price {display: unset;}
-.pricex3 {left:unset; line-height: 140%;}**/
-
+.menuitem.plato {font-size:16px;}	
+.expandish .-C p {
+    margin: 10px 0 0 14rem;
+}
+.expandish .-C .pricex3 {margin-left: 14rem;}
 .dish-3 .dishnumber {left:0;}
 
 .expandish .dishnumber {color: #ffffff; background-color: #000000;}
@@ -656,7 +656,8 @@ color: #ADA281;
 }
 .BACK {display:block;}
 
-.platoprecio .plato {flex:1; }	
+.platoprecio .plato {flex:1; }
+.wine img {padding: 16px;}	
 
 }
 
