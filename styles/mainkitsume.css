@@ -286,11 +286,12 @@ width: 50px; text-align: unset;*/
     justify-content: space-between;
     padding: 6px 0px 0 9px;
 	align-items: flex-end;}
-.platoprecio .plato {text-align:left; display: flex; flex:1; }	
+.platoprecio .plato {text-align:left; display: flex;}	
 .platoprecio .price {display: flex;}
-.platoprecio div:nth-child(3n) {padding: 10px 10px 0 10px; flex:1 1 160px!important;}
+.platoprecio div:nth-child(3n) {padding: 10px 0px; flex:1 1 160px!important;}
 .expandish .platoprecio .plato  {flex-basis: 70%;}
 .expandish .platoprecio .price  {margin:0;}
+.expandish .principal  {padding: 5px 20px;}
 
 .dishphoto {text-align:center!important}
 
@@ -428,7 +429,7 @@ border-radius: 0;
 
 .expandish .dishphoto {margin: 20px 0 10px; text-align: center;}
 
-.expandish .menuitem, .expandish .price  {color:#91855E;}
+.expandish .menuitem, .expandish .price, .expandish .principal  {color:#91855E;}
 
 .TITLE {-moz-box-shadow: none;
     -webkit-box-shadow: none;
@@ -650,6 +651,9 @@ padding: 1.2rem 0 0;
 color: #ADA281;
 }
 .BACK {display:block;}
+
+.platoprecio .plato {flex:1; }	
+
 }
 
 
