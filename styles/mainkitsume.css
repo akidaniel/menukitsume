@@ -684,13 +684,3 @@ margin: 0 0 16px;
 
 }
 
-
-/**
-
-@media only screen and (max-width: 640px)  {
-body[yahoo] .ANCHO {width:440px!important; padding:0px;!important; }
-body[yahoo] .CUADRO {width:220px!important; padding:0px;!important; }
-}
-@media only screen and (max-width: 540px) {
-body[yahoo] .ANCHO {width:300px!important; padding:0;}
-body[yahoo] .CUADRO {width:140px!important; padding:0px;}
