@@ -445,7 +445,8 @@ left:50%; margin-left:-280px;
 .-L {padding-bottom:0.8rem;}
 .-C {text-align:center!important; }
 .menuitemcontainer .SUBTITULO {margin-top:0;}
-.cartadevinos.TITLE, .cartadesushis.TITLE {margin: 5rem auto 1rem;}
+.cartadevinos.TITLE {margin: 5rem auto 1rem;}
+.cartadesushis.TITLE {margin: 1rem auto;}
 .wine {text-align: center!important;}
 .wine img {height: 230px; padding: 16px 30px; margin: 0 auto 0.2rem;}
 .expandish .wine img {width:auto; height: auto; }
