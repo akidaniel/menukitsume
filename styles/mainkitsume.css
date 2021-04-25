@@ -422,13 +422,14 @@ z-index: 12;
 padding-bottom: 1rem;
 color: #ffffff;
 border-radius: 0;
+left:50%; margin-left:-280px;
 }
 .listainside {padding:5px 0px;}
 .listaplus {width:100%}
 .expandish img {width: 100%;
     margin-top: -10px;
     border: none;
-    border-radius: unset;}
+    border-radius: unset; }
 
 	
 .expandish .pricex3 {left:20%; position: relative;}
@@ -609,7 +610,7 @@ html {margin: -0.5rem 2px 0;
 }
 .show {display:none;}
 /**FIN FONDO DE COLOR**/
-
+.expandish {left:auto; margin-left:0;}
 
 .menuitem.plato {font-size:16px;}	
 .expandish .-C p {
