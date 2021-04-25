@@ -15,7 +15,6 @@ vertical-align: top;
 list-style:none;
 list-style-type: none;
 text-align:left;
-
 }
 :focus {
 	outline: 0;
@@ -24,7 +23,8 @@ text-align:left;
 
 
 .pagina {box-sizing:border-box;
-padding:0;
+padding:0; height: 100%;
+
 background: -moz-linear-gradient(top, rgba(80, 70, 65,0.8) 0%, rgba(248,234,235,0.1) 6%), url('https://akidaniel.github.io/menukitsume/imagenes/fondobase.png') left bottom no-repeat, url('https://akidaniel.github.io/menukitsume/imagenes/fondo.gif') left bottom repeat;
 
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(80, 70, 65,0.8)), color-stop(8%, rgba(248,234,235,0.1))), url('https://akidaniel.github.io/menukitsume/imagenes/fondobase.png') left bottom no-repeat, url('https://akidaniel.github.io/menukitsume/imagenes/fondo.gif') left bottom repeat;
@@ -41,7 +41,8 @@ background: -ms-linear-gradient(top, rgba(80, 70, 65,0.8) 0%, rgba(248,234,235,0
 
 background: linear-gradient(to bottom, rgba(80, 70, 65,0.8) 0%, rgba(248,234,235,0.1) 6%), url('https://akidaniel.github.io/menukitsume/imagenes/fondobase.png') left bottom no-repeat, url('https://akidaniel.github.io/menukitsume/imagenes/fondo.gif') left bottom repeat;
 
-background-size: 35%, contain;
+background-size: auto, contain;
+background-attachment: local;
 }
  
 .wrapper {overflow-x:hidden; position: relative;}
@@ -151,12 +152,10 @@ filter:hue-rotate(0deg) saturate(1) brightness(2.5);
 
 .flexbox {
 display: flex;
-margin: 0 auto;
+margin: 0 auto; justify-content:center;
 }
 
-.lista {
-justify-content: space-evenly;
-} 
+ 
 .preciolista {
 text-align:right;
 font-size: 14px!important;
@@ -237,11 +236,12 @@ margin: 0px;
     -webkit-border-radius: 12px;
     border-radius: 12px; -moz-box-shadow: 0 0 0pt 1.5pt #478088; -webkit-box-shadow: 0 0 0pt 1.5pt #478088; box-shadow: 0 0 0pt 1.5pt #478088;
 	background: rgba(213,247,255,0.3);*/}
-.dish-2 img {max-height: 100%; max-width: 100%; border: 10px solid rgb(173, 162, 129, 0.5);
+.dish-2 img {max-height: 100%; max-width: 100%;  
+border-style:solid; border-width:10px; border-color:rgb(173, 162, 129, 0.5);
     border-image: url(https://akidaniel.github.io/menukitsume/imagenes/frame1.png) 30 stretch;
 	-webkit-border-image: url(https://akidaniel.github.io/menukitsume/imagenes/frame1.png) 30 stretch;
     -moz-border-image: url(https://akidaniel.github.io/menukitsume/imagenes/frame1.png) 30 stretch;}
-.dish-3 img {max-height: 100%; max-width: 100%; border: 10px solid rgb(173, 162, 129, 0.5);
+.dish-3 img {max-height: 100%; max-width: 100%; border-style:solid; border-width:10px; border-color:rgb(173, 162, 129, 0.5);
     border-image: url(https://akidaniel.github.io/menukitsume/imagenes/frame2.png) 30 stretch;
 	-webkit-border-image: url(https://akidaniel.github.io/menukitsume/imagenes/frame2.png) 30 stretch;
     -moz-border-image: url(https://akidaniel.github.io/menukitsume/imagenes/frame2.png) 30 stretch;}
