@@ -187,6 +187,7 @@ border-radius: 12px 12px 0 0;*/
 padding: 0 0 20px;;
 line-height: 100%;
 text-shadow: 1px 1px 1px #D61C1C;
+margin: 0.2rem 0;
 }
 
 i {color: #e0ffff;}
@@ -195,7 +196,7 @@ i {color: #e0ffff;}
 .bebidas, .desserts  {margin-top:-4.5rem!important;}
 
 
-.topimage {margin: -2.5rem auto 0; text-align:center;}
+.topimage {text-align:center;}
 .topimage img {max-width:500px;}
 .principal {
 flex: 1 50%;
@@ -271,7 +272,7 @@ transform: scale(.8, 1);
 display: inline-block;
 right: 0;
 font-weight: bold;
-color: #534540; margin-right:-15px; line-height: 100%;
+color: #534540; margin-right:-15px; line-height: 150%;
 /*width:fit-content;-moz-border-radius: 20px;
 -webkit-border-radius: 20px;
 border-radius: 20px;
@@ -438,13 +439,14 @@ border-radius: 0;
 
 .TITLE {-moz-box-shadow: none;
     -webkit-box-shadow: none;
-    box-shadow: none;}
+    box-shadow: none; margin-top: 1rem;}
 
 .-L {padding-bottom:0.8rem;}
 .-C {text-align:center!important; }
+.menuitemcontainer .SUBTITULO {margin-top:0;}
 .cartadevinos.TITLE, .cartadesushis.TITLE {margin: 5rem auto 1rem;}
 .wine {text-align: center!important;}
-.wine img {height: 230px; padding: 16px 30px; margin: 0 auto 0.8rem;}
+.wine img {height: 230px; padding: 16px 30px; margin: 0 auto 0.2rem;}
 .expandish .wine img {width:unset; height: unset; }
 .expandish .-C .price {line-height: 180%; margin-left: 10rem; left:unset; right:unset;}
 .expandish .-C .pricex3 {line-height: 180%; margin-left: 10rem; left:unset; right:unset;}
@@ -608,8 +610,7 @@ html {margin: -0.5rem 2px 0;
 .show {display:none;}
 /**FIN FONDO DE COLOR**/
 
-.menuitem {margin: 0 -0.05rem -0.1rem;
-}
+
 .menuitem.plato {font-size:16px;}	
 .expandish .-C p {
     margin: 10px 0 0 14rem;
@@ -622,7 +623,7 @@ html {margin: -0.5rem 2px 0;
 .bebidas  {marging: 0rem!important; margin-top:0rem;}
 .TITLE {-moz-box-shadow: none;
     -webkit-box-shadow: none;
-    box-shadow: none;}
+    box-shadow: none; margin-top: 5rem;}
 .menuitemcontainer .pricex3 {line-height:unset;}
 
 .cambiocontenido {
@@ -631,8 +632,7 @@ html {margin: -0.5rem 2px 0;
     }
 .FINDUS {top:0;}
 
-.topimage img {
-margin: 4rem auto 0; max-width:100%;
+.topimage img {max-width:85%;
 }
 
 .bebidas, .desserts {
@@ -657,7 +657,7 @@ color: #ADA281;
 .BACK {display:block;}
 
 .platoprecio .plato {flex:1; }
-.wine img {padding: 16px;}	
+.wine img {padding: 12px 8px;}	
 
 }
 
