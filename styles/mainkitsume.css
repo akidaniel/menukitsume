@@ -447,7 +447,7 @@ border-radius: 0;
 .cartadevinos.TITLE, .cartadesushis.TITLE {margin: 5rem auto 1rem;}
 .wine {text-align: center!important;}
 .wine img {height: 230px; padding: 16px 30px; margin: 0 auto 0.2rem;}
-.expandish .wine img {width:unset; height: unset; }
+.expandish .wine img {width:auto; height: auto; }
 .expandish .-C .price {line-height: 180%; margin-left: 10rem; left:unset; right:unset;}
 .expandish .-C .pricex3 {line-height: 180%; margin-left: 10rem; left:unset; right:unset;}
 .expandish .-C {position: absolute; right: 1.5rem; top: 50%;}
