@@ -397,11 +397,19 @@ z-index:222;}
 .platos, .vinos, .sushis {display: block;
 	width: 5rem;
 	height: 5.5rem;
-	text-indent: -9999px;
-	/**position: fixed;**/
+	/**position: fixed;text-indent: -9999px;**/
 	z-index: 999;
 	cursor: pointer;
+	text-align: center;
+    line-height: 980%;
+    color: #ffffff;
+    text-decoration: none;
+	font-size: 16px;
+	font-family: 'Merienda', cursive;
+	text-shadow: 2px 2px 0 #e10609, 2px -2px 0 #e10609, -2px 2px 0 #e10609, -2px -2px 0 #e10609, 2px 0px 0 #e10609, 0px 2px 0 #e10609, -2px 0px 0 #e10609, 0px -2px 0 #e10609;
 }
+
+.LUK.vinos, .RUS.vinos, .LUK.sushis, .RUS.sushis, .LUK.platos, .RUS.platos {display:none;}
 .platos {background: url(https://akidaniel.github.io/menukitsume/imagenes/bt_comida.png) no-repeat center 43%; background-size: contain;}
 .vinos {background: url(https://akidaniel.github.io/menukitsume/imagenes/bt_bebida.png) no-repeat center 43%; background-size: contain;}
 .sushis {background: url(https://akidaniel.github.io/menukitsume/imagenes/bt_sushi.png) no-repeat center 43%; background-size: contain;}
