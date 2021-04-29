@@ -397,16 +397,17 @@ z-index:222;}
 .platos, .vinos, .sushis {display: block;
 	width: 5rem;
 	height: 5.5rem;
-	/**position: fixed;text-indent: -9999px;**/
+	/**position: fixed;text-indent: -9999px; text-shadow: 2px 2px 0 #e10609, 2px -2px 0 #e10609, -2px 2px 0 #e10609, -2px -2px 0 #e10609, 2px 0px 0 #e10609, 0px 2px 0 #e10609, -2px 0px 0 #e10609, 0px -2px 0 #e10609;**/
 	z-index: 999;
 	cursor: pointer;
 	text-align: center;
-    line-height: 980%;
-    color: #ffffff;
+    line-height: 1230%;
+    color: #000000;
     text-decoration: none;
-	font-size: 16px;
+	font-size: 11px;
 	font-family: 'Merienda', cursive;
-	text-shadow: 2px 2px 0 #e10609, 2px -2px 0 #e10609, -2px 2px 0 #e10609, -2px -2px 0 #e10609, 2px 0px 0 #e10609, 0px 2px 0 #e10609, -2px 0px 0 #e10609, 0px -2px 0 #e10609;
+	margin: 0 5px 0 0;
+	
 }
 
 .LUK.vinos, .RUS.vinos, .LUK.sushis, .RUS.sushis, .LUK.platos, .RUS.platos {display:none;}
