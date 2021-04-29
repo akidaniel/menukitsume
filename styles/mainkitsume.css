@@ -373,7 +373,8 @@ position:relative;
 #LES {display:block;}
 .LUK, .LFR, .RUS {display:none;}
 .LES {display:block;}
-
+.menuitem.RUS:not(.plato.RUS) {font-family: 'Lobster', cursive; text-shadow:none; font-size:30px;}
+.platos.RUS, .vinos.RUS, .sushis.RUS {font-family: 'Lobster', cursive; font-size: 12px; line-height: 1100%;}
 .menu_lang, .menu_contenido {display: none;}
 .menu_lang:checked ~ label .BUTTON {color: #c2c;}
 .menu_contenido:checked ~ label .BUTTON {color: #c2c;}
