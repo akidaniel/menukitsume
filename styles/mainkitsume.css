@@ -402,7 +402,7 @@ z-index:222;}
 	z-index: 999;
 	cursor: pointer;
 	text-align: center;
-    line-height: 1230%;
+    line-height: 1190%;
     color: #000000;
     text-decoration: none;
 	font-size: 11px;
@@ -446,12 +446,12 @@ left:50%; margin-left:-280px;
 
 .expandish .dishphoto {margin: 20px 0 10px; text-align: center;}
 
-.expandish .menuitem, .expandish .price, .expandish .principal  {color:#91855E;}
+.expandish .menuitem, .expandish .price, .expandish .principal {color:#91855E;}
 
 .TITLE {-moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none; margin-top: 1rem;}
-
+.fa-wine-glass-alt {vertical-align:middle; font-size: 20px; line-height: 130%; margin-right: 10px;}
 .-L {padding-bottom:0.8rem;}
 .-C {text-align:center!important; }
 .menuitemcontainer .SUBTITULO {margin-top:0;}
@@ -463,7 +463,7 @@ left:50%; margin-left:-280px;
 .expandish .-C .price {line-height: 180%; margin-left: 10rem; left:unset; right:unset;}
 .expandish .-C .pricex3 {line-height: 180%; margin-left: 10rem; left:unset; right:unset;}
 .expandish .-C {position: absolute; right: 1.5rem; top: 50%;}
-.expandish .fa-wine-glass-alt {left: 10rem; position: relative;}
+.expandish .fa-wine-glass-alt {color:#91855E;}
 .expandish .wine {text-align: left!important; margin-left: 3rem!important; height: 430px;}
 .expandish .-C p {margin-left: 10rem;}
 .expandish .descr {padding: 0 0 10px 0; color:#ffffff;}
