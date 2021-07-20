@@ -25,7 +25,7 @@ var icons = [
 $(document).ready(function() {
 
 var display = function(block_name) {
-  $('.SUBTITULO, .menuitem, .descr, .listado, .destacado, .principal, .vinos, .sushis, .platos').css('display', 'none');
+  $('.SUBTITULO, .menuitem, .descr, .listado, .destacado, .principal, .vinos, .sushis, .platos, .hotel, .noche').css('display', 'none');
   $('#' + block_name).css('display', 'block');
   $('.' + block_name).css('display', 'block');
 

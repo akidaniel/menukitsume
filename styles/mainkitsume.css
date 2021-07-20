@@ -131,8 +131,8 @@ width: 2.25rem;
 	text-indent: -9999px;
 	position: fixed;
 	z-index: 1500;
-	right: 0.5rem;
-	bottom: 0.5rem;
+	right: -0.5rem;
+	bottom: 4.75rem;
 	background: url(https://kitsume.neocities.org/imagenes/bt_top.png) no-repeat center 43%;
 	background-size: contain;
 }
@@ -178,11 +178,6 @@ width:100%;}
 .menuitem {font-family: 'Merienda', cursive; font-size: 1.8rem; 
 color: #D61C1C;
 text-align: center;
-/*margin: 0 -0.05rem -0.1rem;
-background: rgb(248,244,235,1);
--moz-border-radius: 12px 12px 0 0;
--webkit-border-radius: 12px 12px 0 0;
-border-radius: 12px 12px 0 0;*/
 padding: 0 0 20px;;
 line-height: 100%;
 text-shadow: 1px 1px 1px #D61C1C;
@@ -209,9 +204,7 @@ letter-spacing: -0.03rem;
 
 }
 .principalb {
-/*flex: 1;
-font-family: 'Commissioner', sans-serif; border-bottom: 2px dotted #534540;
-color:#534540;*/
+
 font-size:14px;
 padding: 0px 0px 5px 5px; 
 
@@ -224,18 +217,10 @@ margin: 0px;
 .licor {flex: 0 0 28%;}
 .dish-2 {text-align: center; width:49%; z-index:10; margin: 0rem 1rem 1rem 0rem; 
    padding: 0 0.2rem;
-	/* -moz-border-radius: 12px;
-    -webkit-border-radius: 12px;
-    border-radius: 12px;
-	 -moz-box-shadow: 0 0 0pt 1.5pt #478088; 
-	-webkit-box-shadow: 0 0 0pt 1.5pt #478088; 
-	box-shadow: 0 0 0pt 1.5pt #478088;
-	background: rgba(213,247,255,0.3);*/}
+	}
 .dish-3 {text-align: center; width:32%; z-index:10; margin: 0.15rem 0.06rem 0rem; width:49%; z-index:10;
-    padding: 0.2rem 0.2rem 1rem; /*-moz-border-radius: 12px;
-    -webkit-border-radius: 12px;
-    border-radius: 12px; -moz-box-shadow: 0 0 0pt 1.5pt #478088; -webkit-box-shadow: 0 0 0pt 1.5pt #478088; box-shadow: 0 0 0pt 1.5pt #478088;
-	background: rgba(213,247,255,0.3);*/}
+    padding: 0.2rem 0.2rem 1rem;
+	}
 .dish-2 img {max-height: 100%; max-width: 100%;  
 border-style:solid; border-width:10px; border-color:rgb(173, 162, 129, 0.5);
     border-image: url(https://kitsume.neocities.org/imagenes/frame1.png) 30 stretch;
@@ -249,9 +234,7 @@ border-style:solid; border-width:10px; border-color:rgb(173, 162, 129, 0.5);
 .dish-1 img {height: 50%; width: 50%; border: 4px solid #534540;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;}
 
-.topdish {/*border-radius: 0 0 12px 12px; -moz-border-radius: 0 0 12px 12px;
-    -webkit-border-radius: 0 0 12px 12px;
-    border-radius: 0 0 12px 12px; margin-top: -7px;*/}
+
 	
 .topdishsinlista {margin-top: 0px;} 	
 .destacado {font-family: 'Commissioner', sans-serif; margin:0.5rem 0.5rem 2rem;
@@ -273,15 +256,7 @@ display: inline-block;
 right: 0;
 font-weight: bold;
 color: #534540; margin-right:-15px; line-height: 150%;
-/*width:fit-content;-moz-border-radius: 20px;
--webkit-border-radius: 20px;
-border-radius: 20px;
-padding: 4px 10px;
-background-color: #7B7E97;
-bottom: 15px; color: white;
-left: 60%;
-display: block;
-width: 50px; text-align: unset;*/
+
 }
 
    
@@ -338,16 +313,6 @@ width: 50px; text-align: unset;*/
 		  content: "\2617"; color:blue; margin-left: -1.5em; z-index:-9999; display:none;
 }
 
-/*.menues {background: rgb(219,249,255,0.35);
-    padding: 5px;
-    -moz-border-radius: 12px;
-    -webkit-border-radius: 12px;
-    border-radius: 15px;}
-	
-.menueslight {}
-
-	
-.menues .menuitem {margin-bottom: 0.5rem;}*/
 	
 /*LANGUE*/
 .BOTONERA, .cambiocontenido {display: -webkit-box;
@@ -374,7 +339,7 @@ position:relative;
 .LUK, .LFR, .RUS {display:none;}
 .LES {display:block;}
 .menuitem.RUS:not(.plato.RUS) {font-family: 'Lobster', cursive; text-shadow:none; font-size:30px;}
-.platos.RUS, .vinos.RUS, .sushis.RUS {font-family: 'Lobster', cursive; font-size: 12px; line-height: 1100%;}
+.platos.RUS, .vinos.RUS, .sushis.RUS, .hotel.RUS, .noche.RUS {font-family: 'Lobster', cursive; font-size: 12px; line-height: 1020%;}
 .menu_lang, .menu_contenido {display: none;}
 .menu_lang:checked ~ label .BUTTON {color: #c2c;}
 .menu_contenido:checked ~ label .BUTTON {color: #c2c;}
@@ -395,26 +360,27 @@ z-index:222;}
 .CT {background-image: url(https://kitsume.neocities.org/imagenes/catalan.png);}
 .RU {background-image: url(https://kitsume.neocities.org/imagenes/ruso.png);}
 
-.platos, .vinos, .sushis {display: block;
-	width: 5rem;
+.platos, .vinos, .sushis, .hotel, .noche {display: block;
+	width: 4.35rem;
 	height: 5.5rem;
-	/**position: fixed;text-indent: -9999px; text-shadow: 2px 2px 0 #e10609, 2px -2px 0 #e10609, -2px 2px 0 #e10609, -2px -2px 0 #e10609, 2px 0px 0 #e10609, 0px 2px 0 #e10609, -2px 0px 0 #e10609, 0px -2px 0 #e10609;**/
 	z-index: 999;
 	cursor: pointer;
 	text-align: center;
-    line-height: 1190%;
+    line-height: 1250%;
     color: #000000;
     text-decoration: none;
-	font-size: 11px;
+	font-size: 10px;
 	font-family: 'Merienda', cursive;
-	margin: 0 3px 0 0;
+	
 	
 }
 
-.LUK.vinos, .RUS.vinos, .LUK.sushis, .RUS.sushis, .LUK.platos, .RUS.platos {display:none;}
+.LUK.vinos, .RUS.vinos, .LUK.sushis, .RUS.sushis, .LUK.platos, .RUS.platos, .LUK.noche, .RUS.noche, .LUK.hotel, .RUS.hotel {display:none;}
 .platos {background: url(https://kitsume.neocities.org/imagenes/bt_comida.png) no-repeat center 43%; background-size: contain;}
 .vinos {background: url(https://kitsume.neocities.org/imagenes/bt_bebida.png) no-repeat center 43%; background-size: contain;}
 .sushis {background: url(https://kitsume.neocities.org/imagenes/bt_sushi.png) no-repeat center 43%; background-size: contain;}
+.hotel {background: url(https://kitsume.neocities.org/imagenes/bt_hotel.png) no-repeat center 43%; background-size: contain;}
+.noche {background: url(https://kitsume.neocities.org/imagenes/bt_noche.png) no-repeat center 43%; background-size: contain;}
 
 .dish-2 div {text-align: right;}
 
@@ -423,9 +389,6 @@ z-index:222;}
 .expandish {
 background-color:#0D0406;
 position: absolute;
-/*min-width: 580px;
-max-width: 580px;
-border:solid 2px #B5B5B5; border-radius:12px!important;*/
 cursor: zoom-out;
 margin: 0;
 z-index: 12;
@@ -600,7 +563,67 @@ left:0;}
    
     }**/
 .dish-2.expandish, .dish-3.expandish, .dish-1.expandish {width: 560px;}
+/*MENU POPUP*/
+.bts-popup, .menuhotel, .menunoche {
+position: fixed;
+overflow:auto;
+left: 0;
+top: 0;
+height: 100%;
+width: 0%;
+background-color: rgba(0, 25, 28, 0.55);
+opacity: 0;
+visibility: hidden;
+-webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+-moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+transition: opacity 0.3s 0s, visibility 0s 0.3s;
+z-index: 9000;
+}
+.bts-popup.is-visible, .menuhotel.is-visible, .menunoche.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 1s 0s, visibility 1s 0s;
+  -moz-transition: opacity 1s 0s, visibility 1s 0s;
+  transition: opacity 1s 0s, visibility 1s 0s;
+  width:100%; z-index: 9600;
+}
 
+.bts-popup-container {
+  position: relative;
+  /*width: 100%;*/
+  max-width: 350px;
+  margin: 8em auto;
+  text-align: right;
+  background:#F2ECE3; padding:10px 30px;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.bts-popup-container p {margin: -5px 0px 10px;}
+.bts-popup-container .plato {text-transform:;}
+
+
+.bts-popup .close, .menuhotel .close, .menunoche .close {
+position: relative;
+top: 25px;
+left: 20px;
+transition: all 0.2s;
+font-size: 32px;
+font-weight: 100;
+text-decoration: none;
+color: #FFFFFF;
+line-height: 0%;
+}
+.bts-popup .close:hover, .menuhotel .close:hover, .menunoche .close:hover  {
+  color: #D61C1C;
+}
+/*FIN MENU POPUP*/
 @media only screen and (max-width: 900px) {
 html {margin: -0.5rem 2px 0;
 }
@@ -639,8 +662,9 @@ html {margin: -0.5rem 2px 0;
 .menuitemcontainer .pricex3 {line-height:unset;}
 
 .cambiocontenido {
-    justify-content: flex-end;
-	right:unset;
+    justify-content: space-around;
+    right: unset;
+    width: 95%;
     }
 .FINDUS {top:0;}
 
@@ -693,4 +717,5 @@ margin: 0 0 16px;
 }
 
 }
+
 

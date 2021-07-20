@@ -49,7 +49,29 @@
 
 <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="scripts/script.js"></script>
+<style>
+/*.bts-popup-container{background:none;}
+.menucontent {background: #F2ECE3; border-radius: 20px; padding: 12px 6px 1px; margin-bottom: -30px; border: #000000 2px solid;}
 
+.menutitulo { background: black;
+    padding: 10px 15px 0px;
+    margin: -20px auto -5px;
+    border-radius: 30px; width: fit-content;}
+.close {color:#F2ECE3;}*/
+
+.bts-popup-container{
+	background: url(https://kitsume.neocities.org/imagenes/framenu.png); 
+	max-width: 300px;
+	background-size: 100% 100%;
+    padding: 20px 30px 40px; text-align:right;
+}
+
+.menucontent {padding: 0 10px;}
+.menutitulo .menuitem {line-height: 120%;}
+.menucontent .principal {padding: 0 10px 8px;}
+
+
+</style>
 
 </head >
 <body class="pagina" style="overflow:visible" yahoo="fix">
@@ -115,6 +137,12 @@
 <input type="checkbox" id="contenido" class="menu_contenido">
 <!--<label for="contenido" class="" onclick="if(document.getElementById('contenido').value) document.getElementById('menu_share_id').checked = false; if(document.getElementById('contenido').value) document.getElementById('menu_buy_id').checked = false;">-->
 </label>
+<div id="menuespecial" class=""><span class="hotel -C LES">Hotel</span><span class="hotel -C LUK">Hotel</span><span class="hotel -C RUS">Отель</span></div>
+
+<div id="menudenoche" class=""><span class="noche -C LES">Noche</span><span class="noche -C LUK">Night</span><span class="noche -C RUS">Ночное</span></div>
+
+
+
 <a class="LES vinos" href="#">Bebidas</a><a class="LUK vinos" href="#">Drinks</a><a class="RUS vinos" style="" href="#">Напитки</a>
 <a class="LES sushis" href="#">Sushis</a><a class="LUK sushis" href="#">Sushi</a><a class="RUS sushis" style="" href="#">Суши</a>
 <a class="LES platos" href="#">Menú</a><a class="LUK platos" href="#">Menu</a><a class="RUS platos" style="" href="#">Меню</a>
@@ -124,15 +152,16 @@
 <div class="menuitemcontainer TITLE">
 <div class="topimage LES LUK RUS" style="">
 <img src="imagenes/logokitsume2.png" alt="Logo" border="0" height="">
-<p class="destacado LES LUK RUS">JAPANESE RESTAURANT AND SUSHI BAR</p>
+<p class="destacado LES LUK RUS" style="margin-bottom:-10px">JAPANESE RESTAURANT AND SUSHI BAR</p>
+<p class="-C principal ultimalinea LES" style="letter-spacing:0.5rem;">&#8212; Desde 2013 &#8212;</p>
+<p class="-C principal ultimalinea  LUK" style="letter-spacing:0.5rem;">&#8212; Since 2013 &#8212;</p>
+<p class="-C principal ultimalinea  RUS" style="letter-spacing:0.5rem;">&#8212; С 2013 г. &#8212;</p>
 
 </div>
 
-<div class="menuitemcontainer SUBTITULO">
-<header id="LES" class="SUBTITULO comidas LES">Menú</header>
-<header id="RUS" class="SUBTITULO comidas RUS">Меню</header>
-<header id="LUK" class="SUBTITULO comidas LUK">Menu</header>
-</div>
+<header><span class="SUBTITULO comidas LES">Menú</span>
+<span class="SUBTITULO comidas RUS">Меню</span>
+<span class="SUBTITULO comidas LUK">Menu</span></header>
 
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
 
@@ -159,11 +188,11 @@
 </div>
 </div>
 <div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_66.jpg" alt="Surf and Turf" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">SURF AND TURF</div><div class="price">22,50 €</div>
-<div><p class="descr LES">Langostino en tempura y vegetales cubiertos por un corte fino de carne de ternera con foie de pato</p>
-<p class="descr LUK">Shrimp in tempura and covered vegetables for a thin cut of meat of veal with duck foie</p>
-<p class="descr RUS">Королевская креветка в темпуре с овощами, покрытая обжаренной телятиной и Фуа-гра</p></div></div>
+<div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_87.jpg" alt="Hayaku Ramen" border="0" ></div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">HAYAKU RAMEN</div><div class="price">16,90 €</div>
+<div><p class="descr LES">Una ramen tradicional japonesa con deliciosa carne de ternera, vegetales y huevo</p>
+<p class="descr LUK">A traditional Japanese ramen with delicious beef, vegetables and egg</p>
+<p class="descr RUS">Традиционный японский рамен с вкусной говядиной, овощами и яйцом</div></div>
 </div>
  
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_72.jpg" alt="Yaki Kaki" border="0" ></div>
@@ -176,18 +205,22 @@
 </div>
 </div>
 <div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_60.jpg" alt="Izumidaii roll" border="0" ></div>
+<!--div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_60.jpg" alt="Izumidaii roll" border="0" ></div>
 <div class="platoprecio"><div class="menuitem plato LES LUK RUS">IZUMIDAII ROLL</div><div class="price">15,50 €</div>
 <div><p class="descr LES">Clásico California roll cubierto por filetes de lzumidaii en tempura con salsa Ponzu</p>
 <p class="descr LUK">California with izumidaii tempura and ponzu sauce</p>
 <p class="descr RUS">Классический ролл Калифорния со стейками лумидайи в темпуре с соусом Понзу</p></div></div>
-
-
+</div-->
+<div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_16.jpg" alt="Dragon Roll" border="0" ></div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">DRAGON ROLL</div><div class="price">19,50 €</div>
+<div><p class="descr LES">Anguila de agua dulce delicadamente preparada sobre un california roll</p>
+<p class="descr LUK">Delicately prepared fresh water eel on California roll</p>
+<p class="descr RUS">Ролл Калифорния со слегка обноранним кугочом пресноводного угря сверху </p></div></div>
 
 </div>
- 
+
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_77.jpg" alt="Hotate Aburi Sushi" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">HOTATE ABURI SUSHI</div><div class="price">17,50 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">HOTATE ABURI SUSHI</div><div class="price">16,90 €</div>
 <div><p class="descr LES">Nigiri con vieiras asadas con un toque de foie de pato</p>
 <p class="descr LUK">Nigiri seared scallops with foie gras</p>
 <p class="descr RUS">Нигири с жареными гребешками и Фуа-гра </p></div></div>
@@ -197,7 +230,7 @@
 </div>
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_54.jpg" alt="Nihon No Dango" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">NIHON NO DANGO</div><div class="price">9,90 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">NIHON NO DANGO</div><div class="price">9,50 €</div>
 <div><p class="descr LES">Sopa de empanadillas japonesas con Pak Choi y cebolla verde</p>
 <p class="descr LUK">Japanese dumpling soup with ginger and scallion</p>
 <p class="descr RUS">Суп с японскими пельменями</p></div></div>
@@ -211,19 +244,23 @@
 </div>
 </div>
 <div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_55.jpg" alt="Tsurai Maguro" border="0" ></div>
+<!--div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_55.jpg" alt="Tsurai Maguro" border="0" ></div>
 <div class="platoprecio"><div class="menuitem plato LES LUK RUS">TSURAI MAGURO</div><div class="price">20,40 €</div>
 <div><p class="descr LES">Mezcla de atún fresco picante sazonado con cebollino jalapeños sobre un arroz crujiente</p>
 <p class="descr LUK">Tuna mix on crisped rice, seasoned with chives</p>
 <p class="descr RUS">Микс острого свежего тунца приправленного луком, на рисовой хрустящей</p></div></div>
+</div-->
+ <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_86.jpg" alt="ROCK AND Roll" border="0" ></div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">ROCK AND ROLL</div><div class="price">19,70 €</div>
+<div><p class="descr LES">Uramaki de anguila dulce. Con el toque crema kimochi y crispy tempura</p>
+<p class="descr LUK">Sweet eel uramaki. With a touch of kimochi cream and crispy tempura</p>
+<p class="descr RUS">Урамаки из сладкого угря. С легким оттенком крема кимочи и хрустящей темпуры</p></div></div>
 </div>
- 
 
 </div>
 </div>
 <!--FIN CUADRO SUGERENCIAS-->
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
 <!--CUADRO ENSALADAS-->
 <div class="menuitemcontainer menues">
 <div class="menuitem LES"><img src="imagenes/redsun01.png" alt="Sun icon" display="block">Ensaladas</div>
@@ -248,7 +285,7 @@
 </div>
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_69.jpg" alt="Kaiso Wakame" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">KAISO WAKAME</div><div class="price">9,80 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">KAISO WAKAME</div><div class="price">9,10 €</div>
 <div><p class="descr LES">Algas frescas marinadas servidas con una salsa de sésamo</p>
 <p class="descr LUK">Marinated seaweed with sesame goma dressing</p>
 <p class="descr RUS">Маринованные водоросли, приправленные кунжутным маслом</p></div></div>
@@ -264,9 +301,7 @@
 </div>
 </div>
 <!--FIN CUADRO ENSALADAS-->
-
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
 <!--CUADRO SOPAS-->
 <div class="menuitemcontainer menues">
 <div class="menuitem LES"><img src="imagenes/redsun02.png" alt="Sun icon" display="block">Sopas</div>
@@ -275,16 +310,14 @@
 
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2 topdish"><div class="dishphoto"><img src="imagenes/dish_78.jpg" alt="Sopa de Miso" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">MISO SOUP</div><div class="price">6 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">MISO SOUP</div><div class="price">5,50 €</div>
 <div><p class="descr LES">Tofu, champiñones, algas wakame y cebolla verde</p>
 <p class="descr LUK">Tofu, mushrooms, wakame and green onion</p>
 <p class="descr RUS">Грибы, тофуи зеленый лук</p></div></div>
-
-
 </div>
  
 <div class="dish-2 topdish"><div class="dishphoto"><img src="imagenes/dish_51.jpg" alt="Miso Ramen" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">MISO RAMEN</div><div class="price">11,90 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">MISO RAMEN</div><div class="price">11,50 €</div>
 <div><p class="descr LES">Tradicional ramen japonés con vegetales, huevo cocido, kamaboko y Pak Choi</p>
 <p class="descr LUK">Japanese traditional ramen</p>
 <p class="descr RUS">Традиционный японский рамен</p></div></div>
@@ -293,7 +326,7 @@
 </div>
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_76.jpg" alt="Hamaguri Miso Soup" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">HAMAGURI MISO SOUP</div><div class="price">9,80 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">HAMAGURI MISO SOUP</div><div class="price">9 €</div>
 <div><p class="descr LES">Almejas, alga wakame, tofu y champiñones</p>
 <p class="descr LUK">Red miso soup with clams and green onion</p>
 <p class="descr RUS">Мисо-сут с моллюсками и зелёным луком</p></div></div>
@@ -310,9 +343,7 @@
 </div>
 </div>
 <!--FIN CUADRO SOPAS-->
-
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
 <!--CUADRO APERITIVOS FRIOS-->
 <div class="menuitemcontainer menues">
 <div class="menuitem LES"><img src="imagenes/redsun03.png" alt="Sun icon" display="block">Aperitivos fríos</div>
@@ -321,7 +352,7 @@
 
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2 topdish"><div class="dishphoto"><img src="imagenes/dish_49.jpg" alt="Kisu" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">KISU</div><div class="price">6,90 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">KISU</div><div class="price">6,70 €</div>
 <div><p class="descr LES">Ostra fresca servida con una salsa Ponzu picante</p>
 <p class="descr LUK">Oyster served in a shot of spicy Ponzu sauce</p>
 <p class="descr RUS">Свежая устрица с острым соусом Понзу </p></div></div>
@@ -329,7 +360,7 @@
 </div>
  
 <div class="dish-2 topdish"><div class="dishphoto"><img src="imagenes/dish_48.jpg" alt="Kasai Kurakka" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">KASAI KURAKKA</div><div class="price">15,90 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">KASAI KURAKKA</div><div class="price">15,70 €</div>
 <div><p class="descr LES">Mezcla de atún picante con trocitos de tomate</p>
 <p class="descr LUK">Spicy tuna mixed with chopped tomato</p>
 <p class="descr RUS">Микс острого тунца с нарезанным томатом, подается с хрустящими вонтонами</p></div></div>
@@ -338,7 +369,7 @@
 </div>
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_75.jpg" alt="Hiyayako Tofu" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">HIYAYAKO TOFU</div><div class="price">6,60 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">HIYAYAKO TOFU</div><div class="price">6 €</div>
 <div><p class="descr LES">Tofu japonés orgánico con salsa de tempura servido con cebolla verde, jengibre, ikura y escamas de bonito</p>
 <p class="descr LUK">Organic Japanese Tofu served with tempura sauce, ginger, green onion and katsuobushi flakes</p>
 <p class="descr RUS">Японский сыр Тофу подается с соусом «Темпура», имбирём, зелеными перьями лука и хлопьями бонито</p></div></div>
@@ -359,16 +390,22 @@
 <div class="platoprecio"><div class="menuitem plato LES LUK RUS">MAGURO NO TATAKI</div><div class="price">15,90 €</div>
 <div><p class="descr LES">Lonchas finas de atún braseado con sésamo y salsa cítrica Porizu</p>
 <p class="descr LUK">Seared tuna braised served with Ponzu vinaigrette</p>
-<p class="descr RUS">Слегка обжаренные кусочки с соусом Понзу</p></div></div>
-
-</div>
-</div>
+<p class="descr RUS">Слегка обжареные кусочки тунца с соусом Понзу</p></div></div>
 
 </div>
 
+<div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_55.jpg" alt="Tsurai Maguro" border="0" ></div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">TSURAI MAGURO</div><div class="price">20,40 €</div>
+<div><p class="descr LES">Mezcla de atún fresco picante sazonado con cebollino jalapeños sobre un arroz crujiente</p>
+<p class="descr LUK">Tuna mix on crisped rice, seasoned with chives</p>
+<p class="descr RUS">Микс острого свежего тунца приправленного луком, на рисовой хрустящей</p></div></div>
+</div>
+
+</div>
+
+</div>
 <!--FIN APERITIVOS FRIOS-->
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
 <!--CUADRO APERITIVOS CALIENTES-->
 <div class="menuitemcontainer menues">
 <div class="menuitem LES"><img src="imagenes/redsun04.png" alt="Sun icon" display="block">Aperitivos calientes</div>
@@ -377,7 +414,7 @@
 
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2 topdish"><div class="dishphoto"><img src="imagenes/dish_50.jpg" alt="Kinoko" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">KINOKO</div><div class="price">8,30 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">KINOKO</div><div class="price">8 €</div>
 <div><p class="descr LES">Salteado de setas variadas japonesas</p>
 <p class="descr LUK">Sautéed mushrooms and onions</p>
 <p class="descr RUS">Обжаренные грибы с луком в японском стиле</p></div></div>
@@ -386,7 +423,7 @@
 </div>
  
 <div class="dish-2 topdish"><div class="dishphoto"><img src="imagenes/dish_57.jpg" alt="Yakitori" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">YAKITORI</div><div class="price">9,35 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">YAKITORI</div><div class="price">9 €</div>
 <div><p class="descr LES">Brochetas de pollo cocinados al estilo japonés</p>
 <p class="descr LUK">Japanese-style skewers with chicken and onions</p>
 <p class="descr RUS">Шпажки с курицей, приготовленные в японском стиле</p></div></div>
@@ -395,7 +432,7 @@
 </div>
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_59.jpg" alt="Dynamite" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">DYNAMITE</div><div class="price">15,40 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">DYNAMITE</div><div class="price">14,90 €</div>
 <div><p class="descr LES">Mezcla de mariscos, champiñones, vegetales cocinados con una salsa de mayonesa picante</p>
 <p class="descr LUK">Baked seafoods mushroom and vegetables with mayo sauce</p>
 <p class="descr RUS">Минс морепродуктов, грибов, овощей приготовленных в остром соусе из майонеза</p></div></div>
@@ -403,7 +440,7 @@
 </div>
  
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_56.jpg" alt="Edamame" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">EDAMAME</div><div class="price">6,80 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">EDAMAME</div><div class="price">5,50 €</div>
 <div><p class="descr LES">Habas de soja delicadamente salteadas con sal de mar y ajo</p>
 <p class="descr LUK">Delicately edamame boiled with sea salt</p>
 <p class="descr RUS">Бобы с солью</p></div></div>
@@ -411,23 +448,7 @@
 
 </div>
 </div>
-<div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_52.jpg" alt="Tori Gyoza" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">TORI GYOZA</div><div class="price">9,35 €</div>
-<div><p class="descr LES">Empanadilla japonesa de pollo y vegetales</p>
-<p class="descr LUK">Chicken and vegetable dumpling</p>
-<p class="descr RUS">Японские вареники «Гвдзе» с курицей и овощами</p></div></div>
 
-</div>
- 
-<div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_53.jpg" alt="Niku Kushiyaki" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">NIKU KUSHIYAKI</div><div class="price">9,30 €</div>
-<div><p class="descr LES">Brocheta de carne de ternera y pimientos de padrón sazonada al estilo japonés</p>
-<p class="descr LUK">Marinated beef served with shishito pepper</p>
-<p class="descr RUS">Маринованная телятина на шпажке, подается с японскими перцами шишито</p></div></div>
-
-</div>
-</div>
 
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_73.jpg" alt="Ebi shoga" border="0" ></div>
@@ -446,17 +467,35 @@
 
 </div>
 </div>
+
 <div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_47.jpg" alt="Shishito" border="0" ></div>
+<div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_52.jpg" alt="Tori Gyoza" border="0" ></div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">TORI GYOZA</div><div class="price">9 €</div>
+<div><p class="descr LES">Empanadilla japonesa de pollo y vegetales</p>
+<p class="descr LUK">Chicken and vegetable dumpling</p>
+<p class="descr RUS">Японские вареники «Гвдзе» с курицей и овощами</p></div></div>
+
+</div>
+ 
+<div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_53.jpg" alt="Niku Kushiyaki" border="0" ></div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">NIKU KUSHIYAKI</div><div class="price">11 €</div>
+<div><p class="descr LES">Brocheta de carne de ternera y pimientos de padrón sazonada al estilo japonés</p>
+<p class="descr LUK">Marinated beef served with shishito pepper</p>
+<p class="descr RUS">Маринованная телятина на шпажке, подается с японскими перцами шишито</p></div></div>
+
+</div>
+</div>
+<div class="flexbox lista"><div class="layer show"></div>
+<!--div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_47.jpg" alt="Shishito" border="0" ></div>
 <div class="platoprecio"><div class="menuitem plato LES LUK RUS">SHISHITO</div><div class="price">8,50 €</div>
 <div><p class="descr LES">Salteado japonés con pimientos de Padrón</p>
 <p class="descr LUK">Sautéed Japanese shishito pepper</p>
 <p class="descr RUS">Жареные перцы Шашито в</p></div></div>
 
 
-</div>
+</div-->
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_46.jpg" alt="Tori Karagee" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">TORI KARAGEE</div><div class="price">9,90 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">TORI KARAGEE</div><div class="price">9,10 €</div>
 <div><p class="descr LES">Trocitos crujientes de pollo marinados en salsa de miso dulce</p>
 <p class="descr LUK">Crispy chicken bits marinated with ginger sauce</p>
 <p class="descr RUS">Хрустящие куриные кусочки, маринованные в сладком имбирно-соевом соусе</p></div></div>
@@ -466,9 +505,7 @@
 </div>
 </div>
 <!--FIN CUADRO APERITIVOS CALIENTES-->
-
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
 <!--CUADRO EXTRAS-->
 <div class="menuitemcontainer menues">
 <div class="menuitem LES"><img src="imagenes/redsun01.png" alt="Sun icon" display="block">Extras</div>
@@ -539,10 +576,7 @@
 </div>
 </div>
 <!--FIN CUADRO EXTRAS-->
-
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
-
 <!--CUADRO PLATOS PRINCIPALES-->
 <div class="menuitemcontainer menues">
 <div class="menuitem LES"><img src="imagenes/redsun02.png" alt="Sun icon" display="block">Platos principales</div>
@@ -588,19 +622,17 @@
 </div>
 </div>
 <div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_41.jpg" alt="Sukiyaki" border="0" ></div>
+<!--div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_41.jpg" alt="Sukiyaki" border="0" ></div>
 
 
 <div class="platoprecio"><div class="menuitem plato LES LUK RUS">SUKIYAKI</div><div class="price">22 €</div>
 <div><p class="descr LES">Sopa tradicional japonesa con fideos, algas, tofu, vegetales y finos trozos de ternera cocinados en un caldo sukiyaki</p>
 <p class="descr LUK">Thinly sliced beef with vegetables, noodles and tofu cooked in sukiyaki broth</p>
 <p class="descr RUS">Традиционный японский суп с лапшой, водорослями, тофу, овощами и тонкими слайсами телятины, приготовленные на бульоне сукияки</p></div></div>
-
-
-</div>
+</div-->
  
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_18.jpg" alt="Chicken Teriyaki" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">CHICKEN TERIYAKI</div><div class="price">15,50 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">CHICKEN TERIYAKI</div><div class="price">14,90 €</div>
 <div><p class="descr LES">Trozos tiernos de pollo marinados y cocinados en salsa teriyaki</p>
 <p class="descr LUK">Charbroiled chicken seasoned with our famous teriyaki sauce</p>
 <p class="descr RUS">Кусочки нежной курицы, маринованной и приготовленной в соусе Терияки</p></div></div>
@@ -610,7 +642,7 @@
 </div>
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_38.jpg" alt="Tori Katsu" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">TORI KATSU</div><div class="price">15,90 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">TORI KATSU</div><div class="price">14,40 €</div>
 <div><p class="descr LES">Finos trozos de pollo rebozados en panko servido con nuestra salsa especial torikatsu aparte</p>
 <p class="descr LUK">Lightly fried breaden chicken served with special tonkatsu sauce</p>
 <p class="descr RUS">Слегка обжаренные кусочки нежной курицы, подаётся с нашим особым соусом Тонкацу</p></div></div>
@@ -657,7 +689,7 @@
 
 </div>
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_31.jpg" alt="Hotategai Kinoko" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">HOTATEGAI KINOKO</div><div class="price">26,40 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">HOTATEGAI KINOKO</div><div class="price">25,20 €</div>
 <div><p class="descr LES">Vieiras salteadas con sobre un variado de setas</p>
 <p class="descr LUK">Pan-sauteed jumbo scallops topped served with a cluster of mushrooms, fried onions</p>
 <p class="descr RUS">Жареные гребешки на сковороде шампиньонами и поджаренным луком</p></div></div>
@@ -666,15 +698,11 @@
 </div>
 </div>
 <!--FIN CUADRO PLATOS PRINCIPALES-->
-
-
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
 <!--CUADRO FUSION-->
 <div class="menuitemcontainer menues">
-<div class="menuitem LES"><img src="imagenes/redsun01.png" alt="Sun icon" display="block">Cocina Vietnamita</div>
-<div class="menuitem RUS"><img src="imagenes/redsun01.png" alt="Sun icon" display="block">Fusion Asian</div>
-<div class="menuitem LUK"><img src="imagenes/redsun01.png" alt="Sun icon" display="block">Vietnamese Kitchen</div>
+<div class="menuitem LES LUK RUS"><img src="imagenes/redsun01.png" alt="Sun icon" display="block">Fusion Asian</div>
+
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2 topdish"><div class="dishphoto"><img src="imagenes/dish_04.jpg" alt="Goi Du Du Tom Nuong" border="0" ></div>
 <div class="platoprecio"><div class="menuitem plato LES LUK RUS">GOL DU DU TOM NUONG</div><div class="price">14 €</div>
@@ -683,13 +711,18 @@
 <p class="descr RUS">Смешайте салат с манго, ростками фасоли, помидорами черри и креветками в японском гриле</p></div></div>
 
 </div>
- 
-<div class="dish-2 topdish"><div class="dishphoto"><img src="imagenes/dish_03.jpg" alt="Ca Rg" border="0" ></div>
+ <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_88.jpg" alt="Chicken Bangkok" border="0" ></div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">CHICKEN BANGKOK</div><div class="price">15,80 €</div>
+<div><p class="descr LES">Tiras de pollo crujiente marinadas en salsa Sweet Bangkok</p>
+<p class="descr LUK">Crispy Chicken Strips Marinated in Sweet Bangkok Sauce</p>
+<p class="descr RUS">Хрустящие куриные полоски, маринованные в сладком бангкокском соусе</p></div></div>
+</div>
+<!--div class="dish-2 topdish"><div class="dishphoto"><img src="imagenes/dish_03.jpg" alt="Ca Rg" border="0" ></div>
 <div class="platoprecio"><div class="menuitem plato LES LUK RUS">CA RG</div><div class="price">18 €</div>
 <div><p class="descr LES">Curry asiático con berenjenas, zanahoria, mango, patata, cilantro, leche de coco, pollo o langostino</p>
 <p class="descr LUK">Asian curry with aubergine, carrot, mango, potato, coriander, coconut milk, chicken or shrimps</p> 
 <p class="descr RUS">Азиатский карри с баклажаном, морковью, манго, картофелем, кориандром, кокосовым молоком, курицей или креветками</p>
-</div></div>
+</div></div-->
 
 </div>
 </div>
@@ -711,10 +744,7 @@
 </div>
 </div>
 <!--FIN CUADRO FUSION-->
-
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
-
 <!--CUADRO POSTRES-->
 <div class="menuitemcontainer menues">
 
@@ -800,7 +830,6 @@
 
 </div>
 
-
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
 
 </div>
@@ -839,7 +868,7 @@
 </div>
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_36.jpg" alt="Salmon Maki" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">SALMON MAKI</div><div class="price">7,70 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">SALMON MAKI</div><div class="price">7,60 €</div>
 <div><p class="descr LES">Maki salmón</p>
 <p class="descr LUK">Maki salmon</p>
 <p class="descr RUS">Маки с лососем</p></div></div>
@@ -855,7 +884,7 @@
 </div>
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_40.jpg" alt="Suzuki Maki" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">SPICY SUZUKI MAKI</div><div class="price">7,70 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">SPICY SUZUKI MAKI</div><div class="price">7,30 €</div>
 <div><p class="descr LES">Maki con lubina picante</p>
 <p class="descr LUK">Maki with spicy sea bass</p>
 <p class="descr RUS">Острые маки</p></div></div>
@@ -876,7 +905,7 @@
 </div>
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_44.jpg" alt="Tuna Maki" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">TUNA MAKI</div><div class="price">7,70 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">TUNA MAKI</div><div class="price">7,60 €</div>
 <div><p class="descr LES">Maki Atún</p>
 <p class="descr LUK">Maki with tuna</p>
 <p class="descr RUS">Маки стунцом</p></div></div>
@@ -887,7 +916,6 @@
 </div>
 <!--FIN CUADRO Hosomaki-->
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
 <!--CUADRO URAMAKIS-->
 <div class="cartadesushis menues">
 <div class="menuitem LES"><img src="imagenes/redsun02.png" alt="Sun icon" display="block">Uramakis</div>
@@ -895,7 +923,7 @@
 <div class="menuitem RUS"><img src="imagenes/redsun02.png" alt="Sun icon" display="block">Урамаки</div>
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2 topdish"><div class="dishphoto"><img src="imagenes/dish_22.jpg" alt="B.S. California Roll" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">B. S. CALIFORNIA ROLL</div><div class="price">19,80 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">B. S. CALIFORNIA ROLL</div><div class="price">19,40 €</div>
 <div><p class="descr LES">Vieiras gratinadas sobre un roll de california</p>
 <p class="descr LUK">Baked scallop on california roll</p>
 <p class="descr RUS">Печеные морские гребешки на ролле Калифорния</p></div></div>
@@ -904,31 +932,17 @@
 </div>
  
 <div class="dish-2 topdish"><div class="dishphoto"><img src="imagenes/dish_17.jpg" alt="Hawaiian Roll" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">HAWAIIAN ROLL</div><div class="price">18,60 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">HAWAIIAN ROLL</div><div class="price">18,50 €</div>
 <div><p class="descr LES">California roll cubierto por finos trozos de atún fresco</p>
 <p class="descr LUK">Freshly prepared tuna on top of california roll</p>
 <p class="descr RUS">Ролл Калифорния, покрытый тонкими слайсами свежего тунца</p></div></div>
 
 </div>
 </div>
-<div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_26.jpg" alt="Vegas Roll" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">VEGAS ROLL</div><div class="price">17,60 €</div>
-<div><p class="descr LES">Futomaki tempurizado con salmón, aguacate y queso crema</p>
-<p class="descr LUK">Deep-fried combination of cream cheese, salmon, avocado and surimi</p>
-<p class="descr RUS">Горячий ролл с сырным кремом, лососем, авокадо и палочками крабового мяса</p></div></div>
-</div>
- 
-<div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_15.jpg" alt="Dynamite Roll" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">DYNAMITE ROLL</div><div class="price">17,60 €</div>
-<div><p class="descr LES">Mix de marisco gratinado, vegetales, ebi, salsa kabayaki</p>
-<p class="descr LUK">Baked seafoods, shrimp tempura and vegetable</p>
-<p class="descr RUS">Запеченные овощи, моллюски, крабовые палочки с острым соусом</p></div></div>
-</div>
-</div>
+
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_21.jpg" alt="Smokey Philly Roll" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">SMOKET PHILLY ROLL</div><div class="price">17,60 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">SMOKET PHILLY ROLL</div><div class="price">17,40 €</div>
 <div><p class="descr LES">Salmón ahumado por fuera con salmón fresco y queso crema por dentro</p>
 <p class="descr LUK">Tastefull smoked salmon and fresh salmon, cream cheese and cucumber</p>
 <p class="descr RUS">Копченный и свежий лосось, сырный крем и огурец</p></div></div>
@@ -936,7 +950,7 @@
 </div>
  
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_29.jpg" alt="vegetable Tempura" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">VEGETABLE TEMPURA ROLL</div><div class="price">15,60€</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">VEGETABLE TEMPURA ROLL</div><div class="price">15,20€</div>
 <div><p class="descr LES">Mezcla de vegetales cubiertos en tempura</p>
 <p class="descr LUK">Lightly battered shrimp tempura, surimi and avocado artfully assembled</p>
 <p class="descr RUS">Овощной ролл в лёгкой темпуре</p></div></div>
@@ -961,12 +975,12 @@
 </div>
 </div>
 <div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_16.jpg" alt="Dragon Roll" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">DRAGON ROLL</div><div class="price">19,80 €</div>
-<div><p class="descr LES">Anguila de agua dulce delicadamente preparada sobre un california roll</p>
-<p class="descr LUK">Delicately prepared fresh water eel on California roll</p>
-<p class="descr RUS">Ролл Калифорния со слегка обноранним кугочом пресноводного угря сверху </p></div></div>
 
+<div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_66.jpg" alt="Surf and Turf" border="0" ></div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">SURF AND TURF</div><div class="price">22,50 €</div>
+<div><p class="descr LES">Langostino en tempura y vegetales cubiertos por un corte fino de carne de ternera con foie de pato</p>
+<p class="descr LUK">Shrimp in tempura and covered vegetables for a thin cut of meat of veal with duck foie</p>
+<p class="descr RUS">Королевская креветка в темпуре с овощами, покрытая обжаренной телятиной и Фуа-гра</p></div></div>
 </div>
  
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_14.jpg" alt="Alaska Roll" border="0" ></div>
@@ -996,7 +1010,7 @@
 </div>
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_08.jpg" alt="Tempura California Roll" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">TEMPURA CALIFORNIA ROLL</div><div class="price">15,40 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">TEMPURA CALIFORNIA ROLL</div><div class="price">15,10 €</div>
 <div><p class="descr LES">California roll en tempura</p>
 <p class="descr LUK">California roll wrapped with lightly battered tempura seaweed</p>
 <p class="descr RUS">Ролл Калифорния, обёрнутый водорослями, в лёгкой темпуре</p></div></div>
@@ -1004,7 +1018,7 @@
 </div>
  
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_06.jpg" alt="Jon Dragon" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">JON DRAGON ROLL</div><div class="price">18,60 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">JON DRAGON ROLL</div><div class="price">18,40 €</div>
 <div><p class="descr LES">Langostino en tempura, aguacate, pepino, surimi, espárragos y nabo Daikon</p>
 <p class="descr LUK">Tiger shrimp tempura, avocado, cucumber, surimi and asparagus</p>
 <p class="descr RUS">Креветка в темпуре, авокодо, огурец, и спаржа</p></div></div>
@@ -1013,7 +1027,7 @@
 </div>
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_05.jpg" alt="Lotus Roll" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">LOTUS ROLL</div><div class="price">19,80 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">LOTUS ROLL</div><div class="price">19,50 €</div>
 <div><p class="descr LES">Mezcla de mariscos, pescados y shitake, gratinado con nuestra salsa dynamite especial</p>
 <p class="descr LUK">Baked premium mixed seafoods meat on top of California roll served with dynamita sauce</p>
 <p class="descr RUS">Запеченное мясо морепродуктов поверх ролла Калифорния, подаётся с нашим особым острым соусом</p></div></div>
@@ -1021,7 +1035,7 @@
 </div>
  
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_10.jpg" alt="California Roll" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">CALIFORNIA ROLL</div><div class="price">9,60 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">CALIFORNIA ROLL</div><div class="price">9,50 €</div>
 <div><p class="descr LES">Surimi, aguacate y pepino</p>
 <p class="descr LUK">Surimi, avocado and cucumber</p>
 <p class="descr RUS">Авокадо м огурец</p></div></div>
@@ -1030,10 +1044,40 @@
 </div>
 <div class="flexbox lista"><div class="layer show"></div>
 <div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_07.jpg" alt="Shrimp Tempura Roll" border="0" ></div>
-<div class="platoprecio"><div class="menuitem plato LES LUK RUS">SHRIMP TEMPURA ROLL</div><div class="price">14,30 €</div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">SHRIMP TEMPURA ROLL</div><div class="price">14,90 €</div>
 <div><p class="descr LES">Langostinos en tempura, aguacate, pepino, espárrago y surimi</p>
 <p class="descr LUK">An assortment of lightly battered vegetable tempura roll</p>
 <p class="descr RUS">Креветка в темпуре, и авокадо</p></div></div>
+</div>
+ 
+<div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_26.jpg" alt="Vegas Roll" border="0" ></div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">VEGAS ROLL</div><div class="price">17,30 €</div>
+<div><p class="descr LES">Futomaki tempurizado con salmón, aguacate y queso crema</p>
+<p class="descr LUK">Deep-fried combination of cream cheese, salmon, avocado and surimi</p>
+<p class="descr RUS">Горячий ролл с сырным кремом, лососем, авокадо и палочками крабового мяса</p></div></div>
+</div>
+</div>
+
+
+<div class="flexbox lista"><div class="layer show"></div>
+<!--div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_26.jpg" alt="Vegas Roll" border="0" ></div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">VEGAS ROLL</div><div class="price">17,40 €</div>
+<div><p class="descr LES">Futomaki tempurizado con salmón, aguacate y queso crema</p>
+<p class="descr LUK">Deep-fried combination of cream cheese, salmon, avocado and surimi</p>
+<p class="descr RUS">Горячий ролл с сырным кремом, лососем, авокадо и палочками крабового мяса</p></div></div>
+</div>
+ 
+<!--div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_15.jpg" alt="Dynamite Roll" border="0" ></div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">DYNAMITE ROLL</div><div class="price">17,60 €</div>
+<div><p class="descr LES">Mix de marisco gratinado, vegetales, ebi, salsa kabayaki</p>
+<p class="descr LUK">Baked seafoods, shrimp tempura and vegetable</p>
+<p class="descr RUS">Запеченные овощи, моллюски, крабовые палочки с острым соусом</p></div></div>
+</div-->
+<div class="dish-2"><div class="dishphoto"><img src="imagenes/dish_85.jpg" alt="MY VILLA GADEA Roll" border="0" ></div>
+<div class="platoprecio"><div class="menuitem plato LES LUK RUS">MY VILLA GADEA ROLL</div><div class="price">21,50 €</div>
+<div><p class="descr LES">Especial Uramaki Chef con langostinos, salmón, atún, queso Philadelphia y foie de pato</p>
+<p class="descr LUK">Uramaki Chef special with prawns, salmon, tuna, Philadelphia cheese and duck foie</p>
+<p class="descr RUS">Фирменное блюдо от шеф-повара Урамаки с креветками, лососем, тунцом, сыром Филадельфия и утиным фуа</p></div></div>
 </div>
  
 
@@ -1041,8 +1085,6 @@
 </div>
 <!--FIN CUADRO URAMAKIS-->
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
-
 <!--CUADRO COMBOS-->
 <div class="cartadesushis menues">
 <div class="menuitem RUS"><img src="imagenes/redsun01.png" alt="Sun icon" display="block">Суши Комбо Сет</div>
@@ -1083,9 +1125,7 @@
 </div>
 </div>
 <!--FIN CUADRO COMBOS-->
-
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
 <!--CUADRO NIGIRIS/SASHIMIS-->
 <div class="cartadesushis menues">
 <div class="menuitem LES"><img src="imagenes/redsun01.png" alt="Sun icon" display="block">Nigiri o Sashimi</div>
@@ -1145,14 +1185,9 @@
 
 </div>
 <!--FIN CUADRO NIGIRIS/SASHIMIS-->
-
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
 </div>
 <!--FIN MENU SUSHI-->
-
-
-
 
 <!--MENU DE VINOS-->
 <div class="menudevinos">
@@ -1282,10 +1317,8 @@
 </div>
 </div>
 </div>
-<!--FIN VINOS-->
-
+<!--FIN VINO TINTO-->
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
 <!--VINO ROSADO-->
 <div class="cartadevinos">
 <div class="menuitem LES"><img src="imagenes/redsun02.png" alt="Sun icon" display="block">Rosados</div>
@@ -1362,9 +1395,7 @@
 </div>
 </div>
 <!--FIN ROSADO-->
-
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
 <!--VINO BLANCO-->
 <div class="cartadevinos">
 <div class="menuitem LES"><img src="imagenes/redsun03.png" alt="Sun icon" display="block">Blancos</div>
@@ -1471,9 +1502,7 @@
 </div>
 </div>
 <!--FIN VINOS BLANCO-->
-
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
 <!--CHAMPAGNE-->
 <div class="cartadevinos">
 <div class="menuitem LES"><img src="imagenes/redsun04.png" alt="Sun icon" display="block">Champagnes y Cavas</div>
@@ -1518,10 +1547,7 @@
 
 </div>
 <!--FIN CHAMPAGNE-->
-
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
-
 <!--BEBIDAS-->
 <div class="cartadevinos">
 <div class="menuitem LES"><img src="imagenes/redsun01.png" alt="Sun icon" display="block">Agua, refrescos y cervezas
@@ -1601,9 +1627,7 @@
 
 </div>
 <!--FIN BEBIDAS-->
-
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
 <!--GIN TONIC-->
 <div class="cartadevinos">
 <div class="menuitem LES"><img src="imagenes/redsun02.png" alt="Sun icon" display="block">Gin Tonic de Japón</div>
@@ -1618,10 +1642,8 @@
 
 </div>
 <!--FIN GIN TONIC-->
-
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
-<!--GIN TONIC-->
+<!--ALCOHOL-->
 <div class="cartadevinos">
 <div class="menuitem LES"><img src="imagenes/redsun03.png" alt="Sun icon" display="block">Whisky Japonés</div>
 <div class="menuitem RUS"><img src="imagenes/redsun03.png" alt="Sun icon" display="block">Японский виски</div>
@@ -1654,10 +1676,8 @@
 <div class="principal preciolista ultimalinea LES LUK RUS">10 €</div></div>
 
 </div>
-<!--FIN GIN TONIC-->
-
+<!--FIN ALCOHOL-->
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
 <!--SAKE-->
 <div class="cartadevinos">
 <div class="menuitem LES LUK"><img src="imagenes/redsun04.png" alt="Sun icon" display="block">Sake</div>
@@ -1706,9 +1726,7 @@
 
 </div>
 <!--FIN SAKE-->
-
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
 <!--CAFÉS-->
 <div class="cartadevinos">
 <div class="menuitem LES"><img src="imagenes/redsun01.png" alt="Sun icon" display="block">Té y café</div>
@@ -1777,9 +1795,7 @@
 <div class="principal preciolista LES LUK RUS">1,85 €</div></div>
 </div>
 <!--FIN CAFÉS-->
-
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
 <!--TE-->
 <div class="cartadevinos">
 <div class="menuitem LES"><img src="imagenes/redsun02.png" alt="Sun icon" display="block">Té de Japón</div>
@@ -1832,15 +1848,10 @@
 
 </div>
 <!--FIN TE-->
-
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
-
 </div>
 <!--FIN MENU DE VINOS-->
-
-
-<!--ADDRESS-->
+<!--FOOTER-->
 <div class="LES LUK RUS" style="text-align:center;">
 <img src="imagenes/logokitsume2.png" alt="Logo" border="0" height="60px"></div>
 <p class="destacado LES LUK RUS" style="font-size: 14px; text-align:center;">JAPANESE RESTAURANT AND SUSHI BAR</p>
@@ -1869,7 +1880,7 @@
 <span class="descr LES LUK RUS"><a href="mailto:aquidaniel@gmail.com">aquidaniel@gmail.com</a></span>
 
 </div>
-<!--FIN CRDITS-->
+<!--FIN FOOTER-->
 <div><img src="imagenes/BLANK.gif" alt="Espacio" width="10" height="120" align="center" border="0" style="display:block"/></div>
 
 <script type="text/javascript">
@@ -1890,6 +1901,132 @@ $('a.back-to-top, a.simple-back-to-top').click(function() {
 	return false;
 });
 </script>
+
+
+<!--POPUP HOTEL-->    
+<div class="menuhotel" role="alert">
+<div class="bts-popup-container"><a href="#" class="close" target="">×</a>
+<div class="is-visible">
+<div class="menutitulo"><span class="menuitem LES">Menú pensión<br><span class="principal -C ultimalinea LES">( 2 personas )</span></span><span class="menuitem LUK">Hotel Menu<br><span class="principal -C ultimalinea LUK">( 2 people )</span></span><span class="menuitem RUS">Меню Пенсион<br><span class=" principal -C ultimalinea RUS">( 2 персоны )</span></span></div>
+<div class="menucontent">
+<p><span class="menuitem plato LES">Primero entrada</span><span class="menuitem plato LUK">First course</span><span class="menuitem plato RUS">Первые блюда</span></p>
+<p><span class="principal -C LES LUK">Kaiso wakame – Maguro no tataki</span><span class="principal -C RUS">Салат из водорослей вакаме – Тонкие слайсы тунца, слегка обжареного в специях</span></p>
+<p><span class="menuitem plato LES">Segundo</span><span class="menuitem plato LUK">Second course</span><span class="menuitem plato RUS">Вторые блюда</span></p>
+<p><span class="principal -C LES LUK">Futomaki – Tory gyoza</span><span class="principal -C RUS">Ролл в темпуре – Гиозы (японские пельмени с курицей и овощами)</span></p>
+<p><span class="menuitem plato LES">Principal</span></p><span class="menuitem plato LUK">Main course</span><span class="menuitem plato RUS">Третие блюда</span>
+<p><span class="principal -C LES LUK">Nihon chahan</span><span class="principal -C RUS">Японский рис с курицей</span></p>
+<p><span class="menuitem plato LES">Postre</span><span class="menuitem plato LUK">Dessert</span><span class="menuitem plato RUS">Десерты</span></p>
+<p><span class="principal -C ultimalinea LES">Dorayaki de chocolate o helado japonés</span><span class="principal -C ultimalinea LUK">Chocolate dorayaki or Japanese ice cream</span><span class="principal -C ultimalinea RUS">Японское мороженое или шоколадный дораяки</span></p>
+<p><span class="principal -C ultimalinea LES">Bebida no incluida</span><span class="principal -C ultimalinea LUK"> Drink not included</span><span class="principal -C ultimalinea RUS">Напиток не включен</span></p></div>
+
+</div>
+</div> 
+
+<div class="bts-popup-container" style="margin-top:-8em" ><a href="#" class="close" target="">×</a>
+<div class="is-visible" style="">
+<div class="menutitulo"><span class="menuitem LES">Cena romántica<br>Escapada Oriental<br><span class="principal -C ultimalinea LES">( 2 personas )</span></span><span class="menuitem LUK">Romantic dinner<br>Oriental Escape<br><span class="principal -C ultimalinea LUK">( 2 people )</span></span><span class="menuitem RUS">Япрнский уикенд<br>Романтический ужин<br><span class=" principal -C ultimalinea RUS">( 2 человека )</span></span></div>
+<div class="menucontent">
+<p><span class="menuitem plato LES">Primero entrada</span><span class="menuitem plato LUK">First course</span><span class="menuitem plato RUS">Первые блюда</span></p>
+<p><span class="principal -C LES LUK">Salmón Maki – Tori gyoza</span><span class="principal -C RUS">Маки из сальмона - Гиозы (японские пельмени из овощей и курицы)</span></p>
+<p><span class="menuitem plato LES">Segundo</span><span class="menuitem plato LUK">Second course</span><span class="menuitem plato RUS">Вторые блюда</span></p>
+<p><span class="principal -C LES">Nigiris mixtos (6 pzas.) – Futomaki del Chef</span><span class="principal -C LUK">Mixed Nigiri (6 pcs.) - Chef's Futomaki</span><span class="principal -C RUS">Микст из нигири (6шт.) - Ролл в темпуре</span></p>
+<p><span class="menuitem plato LES">Principal</span></p><span class="menuitem plato LUK">Main course</span><span class="menuitem plato RUS">Третие блюда</span>
+<p><span class="principal -C LES LUK">Gyo teppanyaki – Nihon chahan</span><span class="principal -C RUS">Говьядина тепаньяки - Японский рис</span></p>
+<p><span class="menuitem plato LES">Postre</span><span class="menuitem plato LUK">Dessert</span><span class="menuitem plato RUS">Десерты</span></p>
+<p><span class="principal -C ultimalinea LES">Dorayaki de chocolate o helado japonés</span><span class="principal -C ultimalinea LUK">Chocolate dorayaki or Japanese ice cream</span><span class="principal -C ultimalinea RUS">Японское мороженое или шоколадный дораяки</span></p>
+<p><span class="menuitem plato LES">Bebida</span><span class="menuitem plato LUK">Drink</span><span class="menuitem plato RUS">Напиток</span></p>
+
+<p><span class="principal -C ultimalinea LES">Agua / Refresco / Cerveza o vino de nuestra selección</span><span class="principal -C ultimalinea LUK">Water / Soft drink / Beer or wine from our selection</span><span class="principal -C ultimalinea RUS">Вода / Безалкогольные напитки / Пиво или вино из нашего ассортимента</span></p></div>
+
+</div>
+</div> 
+
+<!--div class="bts-popup-container" style="margin-top:-8em" ><a href="#" class="close" target="">×</a>
+<div class="is-visible" style="">
+<div class="menutitulo"><span class="menuitem LES">Escapada Oriental</span><span class="menuitem LUK">Oriental Escape</span><span class="menuitem RUS">Восточный отдых</span></div>
+<div class="menucontent">
+<p><span class="menuitem plato LES">Primero entrada</span><span class="menuitem plato LUK">First course</span><span class="menuitem plato RUS">Первый курс</span></p>
+<p><span class="principal -C LES">Kaiso wakame o sopa miso o Tory gyoza o Chagio o Salmón Maki o Edamame</span><span class="principal -C LUK">Kaiso wakame or miso soup or Tory gyoza or Chagio or Salmon Maki or Edamame</span><span class="principal -C RUS">Кайсо вакамэ для мисо-супа или тори гёза, или чикаго, или маки с лососем, или эдамаме</span></p>
+<p><span class="menuitem plato LES">Segundo</span><span class="menuitem plato LUK">Second course</span><span class="menuitem plato RUS">Второй курс</span></p>
+<p><span class="principal -C LES">Jon Dragon roll o Chicken teriyaki o Gyo Teppanyaki</span><span class="principal -C LUK">Jon Dragon roll or Chicken teriyaki or Gyo Teppanyaki</span><span class="principal -C RUS">Джон Дракон ролл или Курица терияки или Гё Теппаньяки</span></p>
+<p><span class="menuitem plato LES">Principal</span></p><span class="menuitem plato LUK">Main course</span><span class="menuitem plato RUS">Основное блюдо</span>
+<p><span class="principal -C LES LUK">Yakimeshi chef</span><span class="principal -C RUS">Якимеши повар</span></p>
+<p><span class="menuitem plato LES">Postre</span><span class="menuitem plato LUK">Dessert</span><span class="menuitem plato RUS">Десерт</span></p>
+<p><span class="principal -C LES">Dorayaki chocolate o helado de té verde o Cheese Cake</span><span class="principal -C LUK">Chocolate dorayaki or green tea ice cream or Cheese Cake</span><span class="principal -C RUS">Шоколадный дораяки или мороженое с зеленым чаем или сырный</span></p>
+<p><span class="menuitem plato LES">Bebida</span><span class="menuitem plato LUK">Drink</span><span class="menuitem plato RUS">Напиток</span></p>
+
+<p><span class="principal -C ultimalinea LES">Agua / Refresco / Cerveza o vino de nuestra selección</span><span class="principal -C ultimalinea LUK">Water / Soft drink / Beer or wine from our selection</span><span class="principal -C ultimalinea RUS">Вода / Безалкогольные напитки / Пиво или вино из нашего ассортимента</span></p></div>
+
+</div>
+</div--> 
+</div>
+<!--FIN POPUP-->
+<!--POPUP NOCHE-->
+<div class="menunoche" role="alert">
+<div class="bts-popup-container"><a href="#" class="close" target="">×</a>
+<div class="is-visible">
+<div class="menutitulo"><span class="menuitem LES">Menú de noche</span><span class="menuitem LUK">Evening menu</span><span class="menuitem RUS">Вечернее меню</span></div>
+<div class="menucontent">
+<p><span class="menuitem plato LES">Maguro Tataki</span><span class="menuitem plato LUK">Maguro Tataki</span><span class="menuitem plato RUS">Магуро Татаки</span></p>
+<p><span class="principal -C LES">Lonchas atún rojo braseado con sésamo y salsa cítrica ponzu yuzu</span><span class="principal -C LUK">Sliced seared red tuna with sesame and citrus sauce ponzu yuzu</span><span class="principal -C RUS">Нарезанный обжаренный красный тунец с кунжутом и цитрусовым соусом понзу юдзу</span></p>
+<p><span class="menuitem plato LES LUK">Poke Hawaii</span><span class="menuitem plato RUS">Тыкай гавайи</span></p>
+<p><span class="principal -C LES">Cubitos de atún rojo, salmón, mango y aguacate marinados en salsa casera Kitsume</span><span class="principal -C LUK">Red tuna, salmon, mango and avocado cubes marinated in Kitsume homemade sauce</span><span class="principal -C RUS">Красный тунец, лосось, кубики манго и авокадо, маринованные в домашнем соусе Китсуме</span></p>
+<p><span class="menuitem plato LES LUK">Ebi Saku roll</span><span class="menuitem plato RUS">Эби Саку ролл</span></p>
+<p><span class="principal -C LES">Torymaki de langostinos tempurizado con una exquisita combinación de salsa kimochi y salsa de wasabi</span><span class="principal -C LUK">Tempura shrimp torymaki with an exquisite combination of kimochi sauce and wasabi sauce</span><span class="principal -C RUS">Торымаки из креветок темпура с изысканным сочетанием соуса кимочи и соуса васаби</span></p>
+<p><span class="menuitem plato LES LUK">Gyo Teppanyaki</span><span class="menuitem plato RUS">Гю Теппаньяки</span></p>
+<p><span class="principal -C LES">Carne de ternera Angus en su punto marinada en salsa barbacoa japonesa</span><span class="principal -C LUK">Angus beef marinated in Japanese barbecue sauce</span><span class="principal -C RUS">Говядина Ангус, маринованная в японском соусе барбекю</span></p>
+<p><span class="menuitem plato LES">Postre</span><span class="menuitem plato LUK">Dessert</span><span class="menuitem plato RUS">Десерт</span></p>
+<p><span class="principal -C LES">Té Verde Matcha o Dorayaki Chocolate</span><span class="principal -C LUK">Matcha Green Tea or Dorayaki Chocolate</span><span class="principal -C RUS">Зеленый чай матча или шоколад дораяки</span></p>
+<p><span class="menuitem plato LES LUK RUS">33,50 €</span></p>
+
+<p><span class="principal -C ultimalinea LES">Bebida no incluida</span><span class="principal -C ultimalinea LUK"> Drink not included</span><span class="principal -C ultimalinea RUS">Напиток не включен</span></p></div>
+</div>
+</div>
+</div>
+<!--FIN POPUP NOCHE-->
+<script type="text/javascript">
+jQuery(document).ready(function($){
+  
+window.onload = setTimeout(function (){
+    $(".bts-popup").delay(5000).addClass('is-visible');
+	}, 3000);
+
+
+//close popup
+	$('.bts-popup, .menuhotel, .menunoche').on('click', function(event){
+		if( $(event.target).is('.close') || $(event.target).is('.bts-popup, .menuhotel, .menunoche') || $(event.target).is('.bts-popup-container') ) {
+			event.preventDefault();
+			$(this).removeClass('is-visible');
+		}
+	});
+	//close popup when clicking the esc keyboard button
+	$(document).keyup(function(event){
+    	if(event.which=='27'){
+    		$('.bts-popup, .menuhotel, .menunoche').removeClass('is-visible');
+	    }
+    });
+	
+
+
+	//open popup when clicking #menuespecialES
+	$(document).ready(function(){
+    $("#menuespecial").click(function(){
+	$(".menuhotel").delay(10).addClass('is-visible');
+    });
+	});
+	
+	//open popup when clicking #menunoche
+	$(document).ready(function(){
+    $("#menudenoche").click(function(){
+	$(".menunoche").delay(10).addClass('is-visible');
+    });
+	});
+	
+	
+});
+</script>
+
+
 
 </div>
 
