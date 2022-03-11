@@ -139,7 +139,6 @@
 </label>
 <div id="menuespecial" class=""><span class="hotel -C LES">Hotel</span><span class="hotel -C LUK">Hotel</span><span class="hotel -C RUS">Отель</span></div>
 
-<div id="menuvalentin" class=""><span class="valentin -C LES">Valentín</span><span class="valentin -C LUK">Valentine</span><span class="valentin -C RUS">Валентина</span></div>
 <!--div id="menudenoche" class=""><span class="noche -C LES">Noche</span><span class="noche -C LUK">Night</span><span class="noche -C RUS">Ночное</span></div-->
 
 
@@ -1985,31 +1984,6 @@ $('a.back-to-top, a.simple-back-to-top').click(function() {
 </div>
 </div>
 <!--FIN POPUP NOCHE-->
-
-<!--POPUP VALENTIN-->
-<div class="menuvalentin" role="alert">
-<div class="bts-popup-container"><a href="#" class="close" target="">×</a>
-<div class="is-visible">
-<div class="menutitulo"><span class="menuitem LES">Menú San Valentín</span><span class="menuitem LUK">Valentine's Menu</span><span class="menuitem RUS">Валентиновское меню</span></div>
-<div class="menucontent">
-<p><span class="principal -C LES">Aperitivos de Itamae</span><span class="principal -C LUK">Itamae Appetizers</span><span class="principal -C RUS">Закуски итамаэ</span></p>
-<p><span class="principal -C LES LUK RUS">Nigiri Omakase Love</span></p>
-<p><span class="principal -C LES LUK RUS">Yummy Yakitori</span></p>
-<p><span class="principal -C LES LUK RUS">Kyoto Hot Futomaki</span></p>
-<p><span class="principal -C LES LUK RUS">Black Angus Sweet Yakiniku</span></p>
-<p><span class="principal -C LES LUK RUS">Motto Honey Yakisoba</span></p>
-
-<p><span class="menuitem plato LES">Postre</span><span class="menuitem plato LUK">Dessert</span><span class="menuitem plato RUS">Десерт</span></p>
-<p><span class="principal -C LES">A elegir</span><span class="principal -C LUK">Of your choice</span><span class="principal -C RUS">Выбирать</span></p>
-<p><span class="menuitem plato LES LUK RUS">60 €</span></p>
-
-<p><span class="principal -C ultimalinea LES">Bebida incluida con vino o cava de nuestra selección</span><span class="principal -C ultimalinea LUK">Drink included with wine or cava from our selection</span><span class="principal -C ultimalinea RUS">Напиток включен с вином или кавой из нашего ассортимента</span></p></div>
-</div>
-</div>
-</div>
-<!--FIN POPUP VALENTIN-->
-
-
 <script type="text/javascript">
 jQuery(document).ready(function($){
   
@@ -2019,8 +1993,8 @@ window.onload = setTimeout(function (){
 
 
 //close popup
-	$('.bts-popup, .menuhotel, .menunoche, .menuvalentin').on('click', function(event){
-		if( $(event.target).is('.close') || $(event.target).is('.bts-popup, .menuhotel, .menunoche, .menuvalentin') || $(event.target).is('.bts-popup-container') ) {
+	$('.bts-popup, .menuhotel, .menunoche').on('click', function(event){
+		if( $(event.target).is('.close') || $(event.target).is('.bts-popup, .menuhotel, .menunoche') || $(event.target).is('.bts-popup-container') ) {
 			event.preventDefault();
 			$(this).removeClass('is-visible');
 		}
@@ -2028,7 +2002,7 @@ window.onload = setTimeout(function (){
 	//close popup when clicking the esc keyboard button
 	$(document).keyup(function(event){
     	if(event.which=='27'){
-    		$('.bts-popup, .menuhotel, .menunoche, .menuvalentin').removeClass('is-visible');
+    		$('.bts-popup, .menuhotel, .menunoche').removeClass('is-visible');
 	    }
     });
 	
@@ -2045,13 +2019,6 @@ window.onload = setTimeout(function (){
 	$(document).ready(function(){
     $("#menudenoche").click(function(){
 	$(".menunoche").delay(10).addClass('is-visible');
-    });
-	});
-	
-//open popup when clicking #menuvalentin
-	$(document).ready(function(){
-    $("#menuvalentin").click(function(){
-	$(".menuvalentin").delay(10).addClass('is-visible');
     });
 	});
 	

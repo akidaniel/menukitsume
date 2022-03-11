@@ -339,7 +339,7 @@ position:relative;
 .LUK, .LFR, .RUS {display:none;}
 .LES {display:block;}
 .menuitem.RUS:not(.plato.RUS) {font-family: 'Lobster', cursive; text-shadow:none; font-size:30px;}
-.platos.RUS, .vinos.RUS, .sushis.RUS, .hotel.RUS, .noche.RUS {font-family: 'Lobster', cursive; font-size: 12px; line-height: 1020%;}
+.platos.RUS, .vinos.RUS, .sushis.RUS, .hotel.RUS, .noche.RUS, .valentin.RUS {font-family: 'Lobster', cursive; font-size: 12px; line-height: 1020%;}
 .menu_lang, .menu_contenido {display: none;}
 .menu_lang:checked ~ label .BUTTON {color: #c2c;}
 .menu_contenido:checked ~ label .BUTTON {color: #c2c;}
@@ -360,7 +360,7 @@ z-index:222;}
 .CT {background-image: url(https://kitsume.neocities.org/imagenes/catalan.png);}
 .RU {background-image: url(https://kitsume.neocities.org/imagenes/ruso.png);}
 
-.platos, .vinos, .sushis, .hotel, .noche {display: block;
+.platos, .vinos, .sushis, .hotel, .noche, .valentin {display: block;
 	width: 4.35rem;
 	height: 5.5rem;
 	z-index: 999;
@@ -375,12 +375,14 @@ z-index:222;}
 	
 }
 
-.LUK.vinos, .RUS.vinos, .LUK.sushis, .RUS.sushis, .LUK.platos, .RUS.platos, .LUK.noche, .RUS.noche, .LUK.hotel, .RUS.hotel {display:none;}
+.LUK.vinos, .RUS.vinos, .LUK.sushis, .RUS.sushis, .LUK.platos, .RUS.platos, .LUK.noche, .RUS.noche, .LUK.hotel, .RUS.hotel, .LUK.valentin, .RUS.valentin {display:none;}
 .platos {background: url(https://kitsume.neocities.org/imagenes/bt_comida.png) no-repeat center 43%; background-size: contain;}
 .vinos {background: url(https://kitsume.neocities.org/imagenes/bt_bebida.png) no-repeat center 43%; background-size: contain;}
 .sushis {background: url(https://kitsume.neocities.org/imagenes/bt_sushi.png) no-repeat center 43%; background-size: contain;}
 .hotel {background: url(https://kitsume.neocities.org/imagenes/bt_hotel.png) no-repeat center 43%; background-size: contain;}
 .noche {background: url(https://kitsume.neocities.org/imagenes/bt_noche.png) no-repeat center 43%; background-size: contain;}
+.valentin {background: url(https://kitsume.neocities.org/imagenes/bt_svalentin.png) no-repeat center 43%; background-size: contain;}
+
 
 .dish-2 div {text-align: right;}
 
@@ -564,7 +566,7 @@ left:0;}
     }**/
 .dish-2.expandish, .dish-3.expandish, .dish-1.expandish {width: 560px;}
 /*MENU POPUP*/
-.bts-popup, .menuhotel, .menunoche {
+.bts-popup, .menuhotel, .menunoche, .menuvalentin {
 position: fixed;
 overflow:auto;
 left: 0;
@@ -579,7 +581,7 @@ visibility: hidden;
 transition: opacity 0.3s 0s, visibility 0s 0.3s;
 z-index: 9000;
 }
-.bts-popup.is-visible, .menuhotel.is-visible, .menunoche.is-visible {
+.bts-popup.is-visible, .menuhotel.is-visible, .menunoche.is-visible, .menuvalentin.is-visible {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 1s 0s, visibility 1s 0s;
@@ -609,7 +611,7 @@ z-index: 9000;
 .bts-popup-container .plato {text-transform:;}
 
 
-.bts-popup .close, .menuhotel .close, .menunoche .close {
+.bts-popup .close, .menuhotel .close, .menunoche .close, .menuvalentin .close {
 position: relative;
 top: 25px;
 left: 20px;
@@ -620,7 +622,7 @@ text-decoration: none;
 color: #FFFFFF;
 line-height: 0%;
 }
-.bts-popup .close:hover, .menuhotel .close:hover, .menunoche .close:hover  {
+.bts-popup .close:hover, .menuhotel .close:hover, .menunoche .close:hover, .menuvalentin .close:hover  {
   color: #D61C1C;
 }
 /*FIN MENU POPUP*/
@@ -631,7 +633,7 @@ html {margin: -0.5rem 2px 0;
 }
 .menuitemcontainer { /*-moz-box-shadow: #223139 0 0 4px; -webkit-box-shadow: #223139 0 0 4px; box-shadow: #223139 0 0 4px; */}
 .UK, .ES, .FR, .CT, .RU {margin: 0 1rem; width: 3rem;}
-.BOTONERA {top: 4.15rem;}
+.BOTONERA {top: 3.5rem;}
 .dish-2.expandish, .dish-3.expandish, .dish-1.expandish {max-width: 100%;}
 
 /**FONDO DE COLOR**/

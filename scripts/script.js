@@ -1,10 +1,9 @@
 // JavaScript Document
-
 //FAVICON
 var icons = [
-			"https://akidaniel.github.io/menucatalina/imagenes/favicons/apple-icon-180x180.png",
-                "https://akidaniel.github.io/menucatalina/imagenes/favicons/favicon-32x32.png",
-                "https://akidaniel.github.io/menucatalina/imagenes/favicons/favicon.ico",
+			"https://kitsume.neocities.org/imagenes/apple-icon-180x180.png",
+                "https://kitsume.neocities.org/imagenes/favicon-32x32.png",
+                "https://kitsume.neocities.org/imagenes/favicon.ico",
             ];
 
             var idx = localStorage["favicon"];
@@ -21,11 +20,12 @@ var icons = [
             link.rel = 'icon';
             link.href = icons[idx];
             document.getElementsByTagName('head')[0].appendChild(link);
+
 //IDIOMAS
 $(document).ready(function() {
 
 var display = function(block_name) {
-  $('.SUBTITULO, .menuitem, .descr, .listado, .destacado, .principal, .vinos, .sushis, .platos, .hotel, .noche').css('display', 'none');
+  $('.SUBTITULO, .menuitem, .descr, .listado, .destacado, .principal, .vinos, .sushis, .platos, .hotel, .noche, .valentin').css('display', 'none');
   $('#' + block_name).css('display', 'block');
   $('.' + block_name).css('display', 'block');
 
